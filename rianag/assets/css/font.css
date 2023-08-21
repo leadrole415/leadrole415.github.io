@@ -1,0 +1,50 @@
+@font-face {
+    font-family: 'NotoSansCJKkr';
+    font-style: bold;
+    font-weight: 600;
+    src: local(※), url(../fonts/NotoSansCJKkr-Bold.woff) format("woff");
+}
+
+@font-face {
+    font-family: 'NotoSansCJKkr';
+    font-style: bold;
+    font-weight: 500;
+    src: local(※), url(../fonts/NotoSansCJKkr-Medium.woff) format("woff");
+}
+
+@font-face {
+    font-family: 'NotoSansCJKkr';
+    font-style: normal;
+    font-weight: 300;
+    src: local(※), url(../fonts/NotoSansCJKkr-Regular.woff) format("woff");
+}
+
+@font-face {
+    font-family: 'NotoSansCJKkr';
+    font-style: bold;
+    font-weight: 200;
+    src: local(※), url(../fonts/NotoSansCJKkr-Light.woff) format("woff");
+}
+
+
+@font-face {
+    font-family: 'Roboto';
+    font-style: bold;
+    font-weight: 600;
+    src: local(※), url(../fonts/Roboto-Bold.woff) format("woff");
+}
+
+@font-face {
+    font-family: 'Roboto';
+    font-style: bold;
+    font-weight: 500;
+    src: local(※), url(../fonts/Roboto-Medium.woff) format("woff");
+}
+
+
+@font-face {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 300;
+    src: local(※), url(../fonts/Roboto-Regular.woff) format("woff");
+}

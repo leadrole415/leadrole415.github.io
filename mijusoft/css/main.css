@@ -1,0 +1,29 @@
+@charset "utf-8";
+
+.wrap {width: 100%; margin: 0 auto; overflow-y: hidden;}
+
+.main_header {background: no-repeat url(../img/main01.jpg) center top; height: 160px; text-align: center; padding: 40px 0; border-bottom-left-radius: 10px; border-bottom-right-radius: 10px;}
+.main_header h1 {color: #fff; font-size: 50px; letter-spacing: 15px;}
+.main_header p {padding-top: 10px; font-size: 30px; color: #fff; font-family: 'Lora', serif; letter-spacing: -1px;}
+
+.main_wrap {height: 920px; background: no-repeat url(../img/main02.jpg) center top; padding: 75px 0 0 90px; position: relative;}
+.main_wrap .bx-wrapper {border: 0 !important;  box-shadow: 5px 5px 5px #ababab !important;}
+/* .main_wrap .bx-wrapper .bx-pager.bx-default-pager a {width: 15px; height: 15px; border-radius: 15px;} */
+.main_wrap .bx-wrapper .bx-pager.bx-default-pager a:hover, .bx-wrapper .bx-pager.bx-default-pager a.active, .bx-wrapper .bx-pager.bx-default-pager a:focus {background: #105697 !important;}
+.main_wrap .bx-wrapper .bx-pager {
+    margin-bottom: -15px;}
+
+.main_wrap > .right {position: absolute; left: 1160px; top: 310px;}
+.main_wrap > .right .txt {font-size: 25px; font-weight: 600; width: 185px; display: inline-block; cursor: auto;}
+.main_wrap > .right .id_text {letter-spacing: 2px;}
+.main_wrap > .right .num_text {letter-spacing: 1.5px;}
+.main_wrap > .right input {width: 260px; height: 55px;}
+.main_wrap > .right a.btn {color: #fff; font-size: 20px; font-weight: 500; display: inline-block; width: 132px; height: 51px; line-height: 51px; text-align: center;}
+.main_wrap > .right a.login_btn {background: url(../img/login_btn.jpg) no-repeat; position: absolute; right: 135px;}
+.main_wrap > .right a.logout_btn {background: url(../img/logout_btn.jpg) no-repeat; position: absolute; right: 0;}
+
+.footer {margin-top: 120px; position: relative;}
+.footer > .left {width: 955px; text-align: center;}
+.footer > .left p {margin-top: 40px; font-size: 23px; font-weight: 600;}
+.footer > .right {position: absolute; top: 112px; left: 1100px;}
+.footer > .right p {font-size: 23px; font-weight: 600;}

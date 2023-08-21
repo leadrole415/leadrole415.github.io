@@ -1,0 +1,757 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="Author" content="KBIZ한국플라스틱제조업협동조합"/>
+<meta name="Keywords" content="KBIZ한국플라스틱제조업협동조합"/>
+<meta name="Description" content="KBIZ한국플라스틱제조업협동조합"/>
+<meta name="viewport" content="user-scalable=yes,initial-scale=1.0,maximum-scale=10.0,minimum-scale=1.0,width=device-width">
+<title>KBIZ한국플라스틱제조업협동조합</title>
+<link rel="stylesheet" href="assets/css/ui.css">
+<link rel="stylesheet" href="assets/css/layout.css">
+<link rel="stylesheet" href="assets/css/main.css">
+<link rel="stylesheet" href="assets/css/board.css">
+<script src="assets/plugin/jquery/jquery-1.12.1.min.js"></script>
+<script src="assets/plugin/jquery/jquery-ui.min.js"></script>
+<script src="assets/plugin/bxslider/jquery.bxslider.min.js"></script>
+<script src="assets/plugin/bxslider/jquery.bxslider-rahisified.min.js"></script>
+<script src="assets/js/common.js"></script>
+<script src="assets/js/main.js"></script>
+</head>
+<body id="main">
+<!-- header start --> 
+
+<!-- gnb start -->  
+   <!-- #include virtual="/assets/cni/gnb.html" --> 
+<!-- gnb End -->
+<div id="skipToContent"><a href="#contentsBox">본문 바로가기</a></div>
+
+<!-- drawerWrap -->
+<div id="drawerOnf" class="drawerWrap">
+	<div class="drawerBox">
+        <h1>
+            <a href="/">KBIZ한국플라스틱제조업협동조합</a>
+        </h1>
+        <div class="tools fb_w">
+            <button type="button" id="searchBoxOn02" class="btnSearch">Search</button>
+            <button type="button" id="btnNavi02" class="btnNavi">Navi</button>
+        </div>
+
+    <!-- searchBox -->
+    <!-- <script type="text/javascript">
+        function tsearch()
+        {
+            if(tsearchForm.search_text.value == "")
+            {
+                alert("검색어를 입력하세요.");
+                tsearchForm.search_text.focus();
+                return false;
+            }
+        }
+        </script>
+        <div id="searchBox02" class="searchBox fb_xy">
+            <form name="tsearchForm" action="/home/search.php" method="post" onsubmit="return tsearch();">
+                <fieldset>
+                    <legend>통합검색</legend>
+                    <div class="inputWrap">
+                        <label for="search">검색</label>
+                        <input type="text" name="search_text" id="search" placeholder="검색어를 입력해 주세요.">
+                        <div class="addon">
+                            <button type="submit" class="hding button">검색</button>
+                        </div>
+                    </div>
+                </fieldset>
+            </form>
+        </div> -->
+
+
+        <div class="login_box">                
+            <span><a href="../../lmth/login.html">로그인</a></span>
+            <span><a href="../../lmth/join.html" class="dot">회원가입</a></span>
+            <span><a href="../../lmth/mypage.html" class="dot">마이페이지</a></span>               
+        </div>
+        <div class="drawerBoxHeader fb_wy">
+            <button type="button" id="btnNaviClose" class="mtools btnNaviClose">Close</button>
+        </div>
+    	<div class="drawerNavi">
+            
+            <div id="mNavi" class="navi">
+                
+               <ul>
+    <li>
+        <a href="../list">알림마당</a>
+        <ul>
+            <li>
+                <a href="../../lmth/board01.html">공지사항</a>
+            </li>
+            <li>
+                <a href="../../lmth/board02.html">조합(원)소식</a>
+            </li>
+            <li>
+                <a href="../../lmth/board03.html">산업최신동향</a>
+            </li>
+            <li>
+                <a href="../../lmth/board04.html">포토갤러리</a>
+            </li>
+            <li>
+                <a href="../../lmth/board05.html">보고서</a>                
+            </li>
+            <li>
+                <a href="../../lmth/board06.html">법령 정보</a>
+            </li>
+            <li>
+                <a href="../../lmth/board07.html">자유게시판</a>
+            </li>           
+        </ul>
+    </li>
+    <li>
+        <a href="../../lmth/business01.html">사업안내</a>
+        <ul>
+            <li>
+                <a href="../../lmth/business01.html">공동구매</a>
+            </li>
+            <li>
+                <a href="../../lmth/business02.html">제품품질인증</a>
+                <ul>
+                    <li><a href="../../lmth/business02.html">시험원소개</a></li>
+                    <li><a href="../../lmth/business0202.html">단체표준제정</a></li>
+                    <li><a href="../../lmth/business0203.html">단제표준인증</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="../../lmth/business03.html">교육 및 인력양성</a>
+            </li>
+            <li>
+                <a href="../../lmth/business04.html">해외시장개척</a>
+            </li>
+            <li>
+                <a href="../../lmth/business05.html">중소기업간 경쟁물품 지정</a>
+            </li>
+            <li>
+                <a href="../../lmth/business06.html">직접생산확인</a>
+            </li>
+            <li>
+                <a href="../../lmth/business07.html">소액수의추천</a>
+            </li>
+            <li>
+                <a href="../../lmth/business08.html">지명경쟁 입찰</a>
+            </li>
+            <li>
+                <a href="../../lmth/business09.html">공통기술개발</a>
+            </li>
+            <li>
+                <a href="../../lmth/business10.html">보증공제 및 공동수급</a>
+            </li>
+        </ul>
+    </li>
+    <li>
+        <a href="../../lmth/member.html">조합원 정보</a>
+        <ul>
+            <li>
+                <a href="../../lmth/member.html">조합원 현황</a>
+            </li>
+            <li>
+                <a href="../../lmth/member02.html">조합원 제품정보</a>
+            </li>
+            <li>
+                <a href="../../lmth/member03.html">조합가입 안내</a>
+            </li>
+        </ul>
+    </li>
+    <li>
+        <a href="../../lmth/plastic.html">플라스틱산업</a>
+        <ul>
+            <li>
+                <a href="../../lmth/plastic.html">정의 및 특성</a>
+            </li>
+            <li>
+                <a href="../../lmth/plastic02.html">산업동향</a>                
+            </li>
+            <li>
+                <a href="../../lmth/plastic03.html">생산현황</a>
+            </li>
+            <li>
+                <a href="../../lmth/plastic04.html">수출입통계</a>
+            </li>
+        </ul>
+    </li>
+    <li>
+        <a href="../../lmth/center01.html">조합 소개</a>
+        <ul>
+            <li>
+                <a href="../../lmth/center01.html">인사말</a>
+            </li>
+            <li>
+                <a href="../../lmth/center02.html">설립목적 및 연혁</a>
+            </li>
+            <li>
+                <a href="../../lmth/center03.html">조직 및 구성</a>
+                <ul>
+                    <li><a href="../../lmth/center03.html">임원현황</a></li>
+                    <li><a href="../../lmth/center04.html">연구조합</a></li>
+                    <li><a href="../../lmth/center05.html">사업목표</a></li>
+                    <li><a href="../../lmth/center06.html">조직도 및 담당업무</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="../../lmth/center07.html">오시는 길</a>
+            </li>
+            
+        </ul>
+    </li>
+   
+    </ul>
+            </div>
+
+        </div>
+
+    </div>
+	<div id="drawerDim" class="dim"></div>
+</div>
+
+<!-- wrap -->
+<div class="wrap">
+<!-- headerWrap -->
+<div class="headerWrap">
+    <div id="gnbArea" class="gnbArea">
+        <div id="gnb" class="gnbBox resWidth fb_ew">
+            <h1>
+                <a href="/">KBIZ한국플라스틱제조업협동조합</a>
+            </h1>
+            <h2 class="hidden">글로벌 메뉴 영역</h2>
+            
+            <ul>
+                <li>
+                    <a href="../../lmth/Board01.html">알림마당</a>
+                    <ul>
+                        <li>
+                            <a href="../../lmth/Board01.html">공지사항</a>
+                        </li>
+                        <li>
+                            <a href="../../lmth/Board02.html">조합(원)소식</a>
+                        </li>
+                        <li>
+                            <a href="../../lmth/Board03.html">산업최신동향</a>
+                        </li>
+                        <li>
+                            <a href="../../lmth/Board04.html">포토갤러리</a>
+                        </li>
+                        <li>
+                            <a href="../../lmth/Board05.html">보고서</a>                
+                        </li>
+                        <li>
+                            <a href="../../lmth/Board06.html">법령 정보</a>
+                        </li>
+                        <li>
+                            <a href="../../lmth/Board07.html">자유게시판</a>
+                        </li>           
+                    </ul>
+                </li>
+                <li>
+                    <a href="../../lmth/business01.html">사업안내</a>
+                    <ul>
+                        <li>
+                            <a href="../../lmth/business01.html">공동구매</a>
+                        </li>
+                        <li>
+                            <a href="../../lmth/business02.html">제품품질인증</a>
+                            <ul>
+                                <li><a href="../../lmth/business02.html">시험원소개</a></li>
+                                <li><a href="../../lmth/business0202.html">단체표준제정</a></li>
+                                <li><a href="../../lmth/business0203.html">단제표준인증</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="../../lmth/business03.html">교육 및 인력양성</a>
+                        </li>
+                        <li>
+                            <a href="../../lmth/business04.html">해외시장개척</a>
+                        </li>
+                        <li>
+                            <a href="../../lmth/business05.html">중소기업간 경쟁물품 지정</a>
+                        </li>
+                        <li>
+                            <a href="../../lmth/business06.html">직접생산확인</a>
+                        </li>
+                        <li>
+                            <a href="../../lmth/business07.html">소액수의추천</a>
+                        </li>
+                        <li>
+                            <a href="../../lmth/business08.html">지명경쟁 입착</a>
+                        </li>
+                        <li>
+                            <a href="../../lmth/business09.html">공통기술개발</a>
+                        </li>
+                        <li>
+                            <a href="../../lmth/business10.html">보증공제 및 공동수급</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="../../lmth/member.html">조합원 정보</a>
+                    <ul>
+                        <li>
+                            <a href="../../lmth/member.html">조합원 현황</a>
+                        </li>
+                        <li>
+                            <a href="../../lmth/member02.html">조합원 제품정보</a>
+                        </li>
+                        <li>
+                            <a href="../../lmth/member03.html">조합가입 안내</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="../../lmth/plastic.html">플라스틱산업</a>
+                    <ul>
+                        <li>
+                            <a href="../../lmth/plastic.html">정의 및 특성</a>
+                        </li>
+                        <li>
+                            <a href="../../lmth/plastic02.html">산업동향</a>                
+                        </li>
+                        <li>
+                            <a href="../../lmth/plastic03.html">생산현황</a>
+                        </li>
+                        <li>
+                            <a href="../../lmth/plastic04.html">수출입통계</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="../../lmth/center01.html">조합 소개</a>
+                    <ul>
+                        <li>
+                            <a href="../../lmth/center01.html">인사말</a>
+                        </li>
+                        <li>
+                            <a href="../../lmth/center02.html">설립목적 및 연혁</a>
+                        </li>
+                        <li>
+                            <a href="../../lmth/center03.html">조직 및 구성</a>
+                            <ul>
+                                <li><a href="../../lmth/center03.html">임원현황</a></li>
+                                <li><a href="../../lmth/center04.html">연구조합</a></li>
+                                <li><a href="../../lmth/center05.html">사업목표</a></li>
+                                <li><a href="../../lmth/center06.html">조직도 및 담당업무</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="../../lmth/center07.html">오시는 길</a>
+                        </li>
+                        
+                    </ul>
+                </li>
+            </ul>
+            <div class="login_box">                
+                <span><a href="../../lmth/login.html">로그인</a></span>
+                <span><a href="../../lmth/join.html" class="dot">회원가입</a></span>
+                <span><a href="../../lmth/mypage.html" class="dot">마이페이지</a></span>               
+            </div>
+            <div class="tools fb_w">
+                <button type="button" id="searchBoxOn" class="btnSearch">Search</button>
+                <button type="button" id="btnNavi" class="btnNavi">Navi</button>
+            </div>
+            
+        </div>
+        <!-- searchBox -->
+		<script type="text/javascript">
+		function tsearch()
+		{
+			if(tsearchForm.search_text.value == "")
+			{
+				alert("검색어를 입력하세요.");
+				tsearchForm.search_text.focus();
+				return false;
+			}
+		}
+		</script>
+        <div id="searchBox" class="searchBox fb_xy">
+            <form name="tsearchForm" action="/home/search.php" method="post" onsubmit="return tsearch();">
+                <fieldset>
+                    <legend>통합검색</legend>
+                    <div class="inputWrap">
+                        <label for="search">검색</label>
+                        <input type="text" name="search_text" id="search" placeholder="검색어를 입력해 주세요.">
+                        <div class="addon">
+                            <button type="submit" class="hding button">검색</button>
+                        </div>
+                    </div>
+                </fieldset>
+            </form>
+        </div>
+    </div>
+
+    <!-- kvWrap -->  
+    <div class="kvWrap">
+        <ul id="mkvSlider">
+            <li style="background:url(assets/img/main/slider_01.jpg);">
+                <div class="desc">
+                    <strong>포스트 플라스틱 시대,<br>
+                    kpmc가 친환경 플라스틱으로 열어나가겠습니다.</strong>
+                    <!-- <p>저희 조합 홈페이지를 방문해 주신 데 대하여 감사드리면서<br>
+                    조합원과 중소기업 여러분에게 유용한 정보의 장이 되시기를 기대합니다.</p> -->
+                </div>
+            </li>
+            <li style="background:url(assets/img/main/slider_01.jpg);">
+                <div class="desc">
+                    <strong>포스트 플라스틱 시대,<br>
+                        kpmc가 친환경 플라스틱으로 열어나가겠습니다.</strong>
+                </div>
+            </li>
+        </ul>
+    </div> 
+    <!-- kvWrap -->  
+    
+</div>
+<!-- headerWrap End--> 
+
+
+
+<!-- section_01 -->
+<div class="section_01">
+    <div class="resWidth">
+        <div class="columnWrap fb_ewy">
+           
+            
+            <div class="noticeWrap">
+            
+              <div id="tabNav1">
+              
+                <!-- // 공지사항 -->	
+                <h3 id="tabNavTitle0101" class="on"><a href="#n" onclick="shwoTabNav('01', 3, 1); return false;" onfocus="this.onclick();">공지사항</a></h3>
+                <div id="tabNav0101" style="display: block;">
+                   <ul>										
+                    <li>
+                        <span>공지사항</span>
+                        <em class="short">추천신청서 제출 안내</em>
+                        <p>아래와 같이 추천신청서 제출을 요청하오니 신청마감일 기한내아래와 같이 추천신청서 제출을 요청하오니 신청마감일 기한내</p>
+                        <span class="more"><a href="#n">+</a></span>
+                    </li>
+                    <li>
+                        <span>공지사항</span>
+                        <em>소기업제춤 운선구매제도 운영규정 개정</em>
+                        <p>아래와 같이 추천신청서 제출을 요청하오니 신청마감일 기한내</p>
+                        <span class="more"><a href="#n">+</a></span>
+                    </li>
+                    <li>
+                        <span>공지사항</span>
+                        <em>중소벤처기업부 "중소기업 비대면 서비스 바우처 중소벤처기업부 "중소기업 비대면 서비스 바우처</em>
+                        <p>아래와 같이 추천신청서 제출을 요청하오니 신청마감일 기한내</p>
+                        <span class="more"><a href="#n">+</a></span>
+                    </li>
+                   </ul>
+                   <span class="more_btn"><a href="#n">더보기</a></span>
+                </div>
+                <!-- 공지사항 E -->
+							
+                <!-- // 조합원소식 -->	
+                <h3 id="tabNavTitle0102" class=""><a href="#n" onclick="shwoTabNav('01', 3, 2); return false;" onfocus="this.onclick();">조합원소식</a></h3>
+                <div id="tabNav0102" style="display: none;">
+                   <ul>
+                    <li>
+                        <span>조합원소식</span>
+                        <em>추천신청서 제출 안내</em>
+                        <p>아래와 같이 추천신청서 제출을 요청하오니 신청마감일 기한내</p>
+                        <span class="more"><a href="#n">+</a></span>
+                    </li>
+                    <li>
+                        <span>조합원소식</span>
+                        <em>소기업제춤 운선구매제도 운영규정 개정</em>
+                        <p>아래와 같이 추천신청서 제출을 요청하오니 신청마감일 기한내</p>
+                        <span class="more"><a href="#n">+</a></span>
+                    </li>
+                    <li>
+                        <span>조합원소식</span>
+                        <em>중소벤처기업부 "중소기업 비대면 서비스 바우처</em>
+                        <p>아래와 같이 추천신청서 제출을 요청하오니 신청마감일 기한내</p>
+                        <span class="more"><a href="#n">+</a></span>
+                    </li>                   
+                    </ul>
+                   <span class="more_btn"><a href="#n">더보기</a></span>
+                </div>
+                <!-- 조합원소식 E -->
+
+				<!-- // 조달정보 -->					  
+                <h3 id="tabNavTitle0103" class=""><a href="#n" onclick="shwoTabNav('01', 3, 3); return false;" onfocus="this.onclick();">조달정보</a></h3>
+                <div id="tabNav0103" style="display: none;">
+                   <ul>
+                    <li>
+                        <span>조달정보</span>
+                        <em>추천신청서 제출 안내</em>
+                        <p>아래와 같이 추천신청서 제출을 요청하오니 신청마감일 기한내</p>
+                        <span class="more"><a href="#n">+</a></span>
+                    </li>
+                    <li>
+                        <span>조달정보</span>
+                        <em>소기업제춤 운선구매제도 운영규정 개정</em>
+                        <p>아래와 같이 추천신청서 제출을 요청하오니 신청마감일 기한내</p>
+                        <span class="more"><a href="#n">+</a></span>
+                    </li>
+                    <li>
+                        <span>조달정보</span>
+                        <em>중소벤처기업부 "중소기업 비대면 서비스 바우처</em>
+                        <p>아래와 같이 추천신청서 제출을 요청하오니 신청마감일 기한내</p>
+                        <span class="more"><a href="#n">+</a></span>
+                    </li>                   
+                    </ul>
+                   <span class="more_btn"><a href="#n">더보기</a></span>
+                </div>
+                <!-- 조달정보 E -->
+                
+               </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- section_01 -->
+
+<!-- popupzone -->
+<div class="popupzone">
+    <div class="resWidth">
+        <div class="columnWrap fb_ewy">
+            <div class="sliderWrap">                 
+                <div class="bx-wrapper">
+                    <div class="bx-viewport">
+                        <ul class="mkv" id="mainSlider">
+                    <li class="bx-clone">
+					   <a href="#n" target="_blank">
+                        <img src="assets/img/popupzone/popup_img01.jpg" alt="">
+                       
+						</a>
+                    </li>
+                    
+					<li>
+					   <a href="#n">
+                        <img src="assets/img/popupzone/popup_img01.jpg" alt="">
+                        
+						</a>
+                    </li> 
+                    
+					<li>
+					   <a href="#n">
+                        <img src="assets/img/popupzone/popup_img01.jpg" alt="">
+                        
+						</a>
+                    </li> 
+                    <li>
+                        <a href="#n">
+                         <img src="assets/img/popupzone/popup_img01.jpg" alt="">
+                         
+                         </a>
+                     </li>
+                     <li>
+                        <a href="#n">
+                         <img src="assets/img/popupzone/popup_img01.jpg" alt="">
+                         
+                         </a>
+                     </li>
+                    
+					
+                </ul>
+            </div>
+            <!-- <div class="bx-controls bx-has-pager bx-has-controls-direction bx-has-controls-auto"><div class="bx-pager bx-default-pager">3 / 5</div><div class="bx-controls-direction"><a class="bx-prev" href="">Prev</a><a class="bx-next" href="">Next</a></div><div class="bx-controls-auto"><div class="bx-controls-auto-item"><a class="bx-stop" href="">Stop</a></div></div></div> -->
+        </div>
+            </div>
+
+            
+        </div>
+    </div>
+</div>
+<!-- popupzone -->    
+    
+
+<div class="section_02">
+    <div class="resWidth">
+        <div class="iconWrap fb_ew">
+           <div class="iconArea fb_ewy">
+                <a href="lmth/plastic.html" class="icon_area01">정의 및 특성</a>
+                <a href="lmth/plastic02.html" class="icon_area02">산업동향</a>
+                <a href="lmth/plastic03.html" class="icon_area03">생산현황</a>
+                <a href="lmth/plastic04.html" class="icon_area04">수출입통계</a>             
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!-- body_contents -->
+<div class="body_contents">       
+    <!-- prWrap -->
+    <div class="prWrap">
+        <div class="resWidth">
+        <div class="title">
+            <h3>조합원 제품 정보</h3>
+            <div class="prTab">
+                <form name="searchForm" action="" method="post">  
+                    <select name="" id="">
+                        <option value="">분류선택</option>
+                        <option value="">1</option>
+                        <option value="">2</option>
+                        <option value="">3</option>
+                    </select>  
+                </form>  
+                <a href="#">전체</a>                      
+            </div>           
+        </div>
+
+        <div class="pr_content">                
+            <div class="left">
+                <div class="video">
+                <iframe width="600" height="314"  src="https://www.youtube.com/embed/CmEil20NVVY" allowfullscreen></iframe>
+                </div>
+            </div>
+            <div class="right">
+                <dl>
+                    <img src="assets/img/main/pr_img01.jpg" alt="">
+                    <dt>SIT 유입변압기</dt>
+                    <dd>(주)삼일변압기<a href="#n"><span class="btn_pr"></span></a></dd>
+                </dl>
+                <dl>
+                    <img src="assets/img/main/pr_img02.jpg" alt="">
+                    <dt>SIT 몰드변압기</dt>
+                    <dd>(주)삼일변압기<a href="#n"><span class="btn_pr"></span></a></dd>
+                </dl>
+                <dl>
+                    <img src="assets/img/main/pr_img03.jpg" alt="">
+                    <dt>전기규격박스, 배전함, 분전함</dt>
+                    <dd>(주)화신<a href="#n"><span class="btn_pr"></span></a></dd>
+                </dl>
+            </div>
+            <div class="right_m">
+                <div class="sliderWrap">                 
+                    <div class="bx-wrapper">
+                        <div class="bx-viewport">
+                            <div class="mkv" id="prSlider">
+                                <dl>
+                                    <img src="assets/img/main/pr_img01.jpg" alt="">
+                                    <dt>SIT 유입변압기</dt>
+                                    <dd>(주)삼일변압기<a href="#n"><span class="btn_pr"></span></a></dd>
+                                </dl>
+                                <dl>
+                                    <img src="assets/img/main/pr_img02.jpg" alt="">
+                                    <dt>SIT 몰드변압기</dt>
+                                    <dd>(주)삼일변압기<a href="#n"><span class="btn_pr"></span></a></dd>
+                                </dl>
+                                <dl>
+                                    <img src="assets/img/main/pr_img03.jpg" alt="">
+                                    <dt>전기규격박스, 배전함, 분전함</dt>
+                                    <dd>(주)화신<a href="#n"><span class="btn_pr"></span></a></dd>
+                                </dl>
+                            </div>
+                        </div>                        
+                    </div>
+                </div>
+            </div>
+        </div>
+       </div>       
+    </div>
+        <!-- prWrap End-->
+
+    </div>
+    <!-- body_contents -->
+
+
+<!-- section_03-->     
+<div class="section_03">
+    <div class="resWidth">
+        <dl class="s03_01">
+            <dt>공동구매사업</dt>
+            <dd><a href="lmth/business01.html">공동구매 사업이란</a></dd>
+        </dl>
+        <dl class="s03_02">
+            <dt>제품품질인증</dt>
+            <dd><a href="lmth/business0202.html">단체표준제정</a></dd>
+            <dd><a href="lmth/business0203.html">단체표준인증</a></dd>
+        </dl>
+        <dl class="s03_03">
+            <dt>해외시장 개척</dt>
+            <dd><a href="lmth/business04.html">추진계획</a></dd>
+            <dd><a href="lmth/business04.html">일정</a></dd>
+        </dl>
+    </div>
+</div>
+<!-- section_03-->  
+
+
+
+
+<!-- sBanner -->
+    <div class="sBanner">
+        <div class="resWidth">
+        <ul class="banner_control">
+            <li class="prev_banner"><a href="#n"> <img src="assets/img/main/sBanner_icon01.png" alt="이전배너보기"></a></li>
+            <li class="pause_banner"><a href="#n"><img src="assets/img/main/sBanner_icon02.png" alt="배너정지"></a></li>
+            <li class="next_banner"><a href="#n"> <img src="assets/img/main/sBanner_icon03.png" alt="다음배너보기"></a></li>
+        </ul>
+        <ul class="banner_img clearfix">	
+            <li><a href="#n" target="_blank" title="새창열림"><img src="assets/img/main/sBanner_img01.png" alt="한국화학산업연합회"></a></li>
+            <li><a href="#n" target="_blank" title="새창열림"><img src="assets/img/main/sBanner_img02.png" alt="한국RC협의회"></a></li>
+            <li><a href="#n" target="_blank" title="새창열림"><img src="assets/img/main/sBanner_img03.png" alt=""></a></li>
+            <li><a href="#n" target="_blank" title="새창열림"><img src="assets/img/main/sBanner_img04.png" alt=""></a></li>
+            <li><a href="#n" target="_blank" title="새창열림"><img src="assets/img/main/sBanner_img05.png" alt=""></a></li>
+            <li><a href="#n" target="_blank" title="새창열림"><img src="assets/img/main/sBanner_img06.png" alt=""></a></li>
+            <li><a href="#n" target="_blank" title="새창열림"><img src="assets/img/main/sBanner_img07.png" alt=""></a></li>
+        </ul>
+        </div>
+    </div>     
+<!-- sBanner End-->
+
+
+</div>
+<!-- wrap End -->
+
+
+<!-- #include virtual="/assets/cni/footer.html" --> 
+<!-- footer start --> 
+<!-- footerWrap -->
+<div class="footerWrap">
+    <h2 class="hidden">하단 푸터 영역</h2>
+	<div class="footer">  
+        <div class="resWidth">  
+        <ul class="footer_top">
+            <li><a href="../../lmth/personal.html">개인정보처리방침</a></li>
+            <li><a href="../../lmth/refusal.html">이메일 주소 무단수집거부</a></li>
+            <li><a href="../../lmth/sitemap.html">사이트맵</a></li>
+            <li class="last"><a href="../../lmth/center07.html">오시는길</a></li>
+        </ul>             
+		<div class="copyTxt">
+			<div class="copyright">
+                <div class="left">
+                    <img src="assets/img/main/fLogo.png" alt="KBIZ한국플라스틱제조업협동조합">
+                </div>
+                <div class="right">
+                    <ul>
+                        <li>서울특별시 영등포구 당산로41길 11 당산SK V1센터 E동 911호</li>
+                        <li>TEL.02-2068-3239</li>
+                        <li>FAX.02-2068-3236</li>
+                    </ul>
+                    <p>COPYRIGHT 2020 한국플라스틱제조업협동조합<br> ALRIGHTS RESERVED.</p>
+                    <div class="selectWrap">
+                        <div class="selectBox">
+                            <a href="#n" class="selectNum">관련사이트</a>
+                            <div class="selectList">
+                                <ul>
+                                    <li><a href="https://www.kbiz.or.kr/ko/index/index.do" target="_blank" title="새창열림">중소기업중앙회</a></li>
+                                    <li><a href="http://www.kemc.co.kr/" target="_blank" title="새창열림">한국전기공업협동조합</a></li> 
+                                </ul>
+                                <div class="selectDim"></div>
+                            </div>
+                        </div>
+                    </div> 
+                </div>
+			</div>
+        </div>
+     </div>  
+    </div>
+    <div class="footer_bar"></div>
+
+</div>
+ 
+
+<!-- returnToPageTop -->
+<div id="returnToPageTop"><a href="#skipToContent">페이지 맨 위로 이동</a></div><!-- footer End -->
+
+</body>
+</html>

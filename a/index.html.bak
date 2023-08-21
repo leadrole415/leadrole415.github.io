@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="css/common.css" type="text/css" rel="stylesheet">
+  <link href="css/main.css" type="text/css" rel="stylesheet">
+  <script src="js/jquery-2.1.3.min.js"></script>
+  <script src="js/nav.js"></script>
+  <title>JADE</title>
+  <!--[if lt IE 9]>
+	<script src=js/html5shiv.min.js"></script>
+	<script src=js/respond.min.js"></script>
+  <![endif]-->
+ </head>
+ <body>
+  <div id="wrap">
+	<header id="header" class="in">
+		
+		<h1 class="logo"><a href="index.html"><img src="images/logo.jpg" alt="JADE"></a></h1>
+		<nav id="trigger" class="gnb clearfix">                    
+			<span href="#" id="ham" class="icon-menu"></span>
+			<ul>
+				<li><a href="#">new</a></li>
+				<li><a href="#">skincare</a></li>
+				<li><a href="#">make up</a></li>
+				<li><a href="#">perfume</a></li>
+				<li><a href="#">bestsellers</a></li>
+				<li><a href="#">jade</a></li>
+			</ul>
+		</nav>
+		
+	</header>
+	<div id="main">
+		<div class="slider">
+			<div class="in slider_bg">
+				<h2>sheer shine
+				rouge unlimited</h2> 
+			</div><!--//in-->
+		</div><!--//slider-->
+		<div class="banner clearfix">
+			<div class="in">
+			<div class="banner_left col_6 mr">
+				<div class="face">
+					<a href="#">
+					<h4>페이스</h4>
+					<img src="images/img_face1.jpg" alt="face">
+					</a>
+				</div><!--//face-->
+			</div><!--//banner_left-->
+			<div class="banner_right col_6">
+				<div class="lip">
+					<a href="#"><h4>립</h4><img src="images/img_lip.jpg" alt="lip"></a>
+				</div><!--//lip-->
+				<div class="eye">
+					<a href="#"><h4>아이</h4><img src="images/img_eye.jpg" alt="eye"></a>
+			</div><!--//eye-->
+			</div><!--//banner_right-->
+			</div><!--//in-->
+		</div><!--//banner-->
+		<div class="best clearfix">
+			<div class="in">
+			<h3><a href="#">베스트</a></h3>
+				<ul>
+					<li class="best_item col_4 mr"><a href="#"><img src="images/best_1.jpg" alt="best_1"></a></li>
+					<li class="best_item col_4 mr"><a href="#"><img src="images/best_2.jpg" alt="best_2"></a></li>
+					<li class="best_item col_4"><a href="#"><img src="images/best_3.jpg" alt="best_3"></a></li>
+				</ul>
+			</div><!--//in-->
+		</div><!--//best-->
+		<div class="makeup_show">
+		<div class="in">
+			<a href="#">
+			<p>
+				JADE COSMETICS<br>
+				HOLIDAY<br>
+				MAKE UP SHOW
+			</p>
+			<span class="makeup_line"></span>
+			</a>
+		</div><!--//in-->
+		</div><!--//makeup_show-->
+		<div class="limited in">
+			<div class="limited_text">
+				<h3>Limited Edition</h3>
+				<p>HOLIDAY KIT<p>
+			</div><!--//limited_text-->
+		</div><!--//limited-->
+	</div>
+	<footer id="footer">
+		
+	</footer>
+  </div><!--//wrap-->
+ </body>
+</html>

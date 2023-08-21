@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        #popup {
+            position: relative;
+            width: 400px;
+            height: 300px;
+            border: 1px solid #000;
+            display: none;
+        }
+        #popup h1 {
+            background: gray;
+            text-align: center;
+        }
+        #popup .pop_contents {
+            padding: 15px;
+        }
+        #popup .close {
+            position: absolute;
+            right: 10px;
+            top: 10px;
+            text-decoration: none;
+        }
+
+
+    </style>
+
+</head>
+<body>
+    <button id="openPop" onclick="open_popup();">팝업</button>
+
+    <div id="popup">
+        <h1>팝업</h1>
+        <div class="pop_contents">
+            <ul>
+                <li>팝업내용</li>
+                <li>팝업내용</li>
+            </ul>
+        </div>
+        <a href="javascript:void(0)" class="close" onclick="close_pop();">x</a>
+    </div>
+    <script>
+        function open_popup(){            
+            document.getElementById('popup').style.display = "block";       
+        };
+       
+        function close_pop(){
+            document.getElementById('popup').style.display = "none";
+        };   
+        
+    </script>
+</body>
+</html>

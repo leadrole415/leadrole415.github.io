@@ -1,0 +1,300 @@
+<%	
+strFlashMenuLeftTop  = "3" '좌측 플래시 메뉴 메인 번호 
+strFlashMenuLeftSub  = "1" '좌측 플래시 메뉴 서브 번호
+%>
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="Author" content="KBIZ한국플라스틱제조업협동조합"/>
+<meta name="Keywords" content="KBIZ한국플라스틱제조업협동조합"/>
+<meta name="Description" content="KBIZ한국플라스틱제조업협동조합"/>
+<meta name="viewport" content="user-scalable=yes,initial-scale=1.0,maximum-scale=10.0,minimum-scale=1.0,width=device-width">
+<title>조직 및 구성 - KBIZ한국플라스틱제조업협동조합</title>
+<link rel="stylesheet" href="../assets/css/ui.css">
+<link rel="stylesheet" href="../assets/css/layout.css">
+<link rel="stylesheet" href="../assets/css/board.css">
+<link rel="stylesheet" href="../assets/css/page.css">
+<script src="../assets/plugin/jquery/jquery-1.12.1.min.js"></script>
+<script src="../assets/plugin/jquery/jquery-ui.min.js"></script>
+<script src="../assets/plugin/bxslider/jquery.bxslider.min.js"></script>
+<script src="../assets/plugin/bxslider/jquery.bxslider-rahisified.min.js"></script>
+<script src="../assets/js/common.js"></script>
+<script src="../assets/js/page.js"></script>
+</head>
+<body id="section5">
+<!-- gnb start -->  
+   <!-- #include virtual="/assets/cni/gnb.html" --> 
+<!-- gnb End -->
+
+
+
+<div class="sub_title">
+    <h2>조합 소개</h2>
+</div>
+
+    
+
+
+
+
+<!-- body_contents -->
+<div class="body_contents">  
+    <div class="resWidth">
+
+    <!-- side start -->  
+        <!-- #include virtual="/assets/cni/side5.html" --> 
+    <!-- side End -->  
+    
+    <!-- content_area -->
+    <div class="content_area">
+        <div class="body_title">
+            <h3>조직 및 구성</h3>
+            <div class="location"> 
+                <div class="path">
+                  <ul>
+                    <li class="home"><span><a class="navi_home" href="/">홈</a></span></li>
+                    <li>조합 소개</li>
+                    <li>조직 및 구성</li>
+                  </ul>
+                  <!-- #include virtual="/assets/cni/btn.html" --> 
+                </div>
+            </div>     
+        </div>
+      
+
+        <!-- contents-->
+        <div class="contents">
+             <!--catagoryTabs-->
+             <ul class="catagoryTabs w04">
+                <li class="active"><a href="#tab1" class="tab01"><span>임원현황</a></span></li>        
+                <li><a href="#tab2" class="tab02"><span>연구조합</a></span></li>        
+                <li><a href="#tab3" class="tab03"><span>사업목표</span></a></li>        
+                <li><a href="#tab4" class="tab04"><span>조직도 및 담당업무</span></a></li> 
+            </ul>
+              <!--catagoryTabs-->
+  
+              <script>
+              $(document).ready(function() {
+  
+              //When page loads...
+              $(".tab_content").hide(); //Hide all content
+              $("ul.catagoryTabs li:first").addClass("active").show(); //Activate first tab
+              $(".tab_content:first").show(); //Show first tab content
+  
+              //On Click Event
+              $("ul.catagoryTabs li").click(function() {
+  
+                $("ul.catagoryTabs li").removeClass("active"); //Remove any "active" class
+                $(this).addClass("active"); //Add "active" class to selected tab
+                $(".tab_content").hide(); //Hide all tab content
+  
+                var activeTab = $(this).find("a").attr("href"); //Find the href attribute value to identify the active tab + content
+                $(activeTab).fadeIn(); //Fade in the active ID content
+                return false;
+              });
+  
+              });
+              </script>
+
+            <div class="tab_container">
+                <div id="tab1" class="tab_content">
+                    <div class="center03">
+                        <h4>임원현황</h4>                   
+                        <div class="one">
+                            <h5>이사장</h5>
+                            <div class="left">
+                                <img src="../assets/img/page/center03_img01.jpg" alt="이사장 정철수">
+                            </div>
+                            <dl>                                
+                                <dt>정철수</dt>
+                                <dd>일신산업(주)</dd>
+                            </dl>
+                        </div>
+
+                        <div class="one">
+                            <h5>전무이사</h5>
+                            <div class="left">
+                                <img src="../assets/img/page/center03_img02.jpg" alt="전무이사 박해철">
+                            </div>
+                            <dl>
+                                <dt>박해철</dt>
+                                <dd></dd>
+                            </dl>
+                        </div>
+
+
+                        <div class="two">
+                            <h5>이사</h5>
+                            <div class="two_con">
+                                <div class="left">
+                                    <img src="../assets/img/page/center03_img03.jpg" alt="이사 권병수">
+                                </div>
+                                <dl>
+                                    <dt>권병수</dt>
+                                    <dd>(주)삼화기업</dd>
+                                </dl>
+                            </div>
+
+                            <div class="two_con">
+                                <div class="left">
+                                    <img src="../assets/img/page/center03_img04.jpg" alt="이사 권용기">
+                                </div>
+                                <dl>
+                                    <dt>권용기</dt>
+                                    <dd>기성화학</dd>
+                                </dl>
+                            </div>
+
+                            <div class="two_con">
+                                <div class="left">
+                                    <img src="../assets/img/page/center03_img05.jpg" alt="이사 김상영">
+                                </div>
+                                <dl>
+                                    <dt>김상영</dt>
+                                    <dd>유진엔지니어링(주)</dd>
+                                </dl>
+                            </div>
+
+                            <div class="two_con">
+                                <div class="left">
+                                    <img src="../assets/img/page/center03_img06.jpg" alt="이사 김영복">
+                                </div>
+                                <dl>
+                                    <dt>김영복</dt>
+                                    <dd>(주)알엔피우진</dd>
+                                </dl>
+                            </div>
+
+                            <div class="two_con">
+                                <div class="left">
+                                    <img src="../assets/img/page/center03_img07.jpg" alt="이사 김용성">
+                                </div>
+                                <dl>
+                                    <dt>김용성</dt>
+                                    <dd>(주)플라스틱과사람들</dd>
+                                </dl>
+                            </div>
+
+                            <div class="two_con">
+                                <div class="left">
+                                    <img src="../assets/img/page/center03_img08.jpg" alt="이사 김진영">
+                                </div>
+                                <dl>
+                                    <dt>김진영</dt>
+                                    <dd>(주)제이엠이엔씨</dd>
+                                </dl>
+                            </div>
+
+                            <div class="two_con">
+                                <div class="left">
+                                    <img src="../assets/img/page/center03_img09.jpg" alt="이사 박진철">
+                                </div>
+                                <dl>
+                                    <dt>박진철</dt>
+                                    <dd>(주)상진</dd>
+                                </dl>
+                            </div>
+
+                            <div class="two_con">
+                                <div class="left">
+                                    <img src="../assets/img/page/center03_img10.jpg" alt="이사 양승용">
+                                </div>
+                                <dl>
+                                    <dt>양승용</dt>
+                                    <dd>원영포리머(주)</dd>
+                                </dl>
+                            </div>
+
+                            <div class="two_con">
+                                <div class="left">
+                                    <img src="../assets/img/page/center03_img11.jpg" alt="이사 이진노">
+                                </div>
+                                <dl>
+                                    <dt>이진노</dt>
+                                    <dd>(주)세진케미칼</dd>
+                                </dl>
+                            </div>
+
+                            <div class="two_con">
+                                <div class="left">
+                                    <img src="../assets/img/page/center03_img12.jpg" alt="이사 정만협">
+                                </div>
+                                <dl>
+                                    <dt>정만협</dt>
+                                    <dd>(주)만텍</dd>
+                                </dl>
+                            </div>
+
+                            <div class="two_con">
+                                <div class="left">
+                                    <img src="../assets/img/page/center03_img13.jpg" alt="이사 정호열">
+                                </div>
+                                <dl>
+                                    <dt>정호열</dt>
+                                    <dd>호명화학공업(주)</dd>
+                                </dl>
+                            </div>
+
+                            <div class="two_con">
+                                <div class="left">
+                                    <img src="../assets/img/page/center03_img14.jpg" alt="이사 현인관">
+                                </div>
+                                <dl>
+                                    <dt>현인관</dt>
+                                    <dd>(주)비케이씨</dd>
+                                </dl>
+                            </div>
+                        </div>
+
+                        <div class="two">
+                            <h5>감사</h5>
+
+                            <div class="two_con">
+                                <div class="left">
+                                    <img src="../assets/img/page/center03_img15.jpg" alt="이사 박종현">
+                                </div>
+                                <dl>
+                                    <dt>박종현</dt>
+                                    <dd>(주)동신이앤피</dd>
+                                </dl>
+                            </div>
+
+                            <div class="two_con">
+                                <div class="left">
+                                    <img src="../assets/img/page/center03_img16.jpg" alt="이사 최형산">
+                                </div>
+                                <dl>
+                                    <dt>최형산</dt>
+                                    <dd>(주)상진</dd>
+                                </dl>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>  
+                <div id="tab2" class="tab_content"></div>
+                <div id="tab3" class="tab_content"></div>
+                <div id="tab4" class="tab_content"></div>
+
+            </div>
+        </div>
+        <!-- contents-->
+
+    </div>
+    <!-- content_area -->
+
+
+</div>
+</div>
+<!-- body_contents -->
+</div>
+<!-- wrap End -->
+
+
+
+<!-- #include virtual="/assets/cni/footer.html" --> 
+</body>
+</html>

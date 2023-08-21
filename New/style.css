@@ -1,0 +1,20 @@
+.title {
+    font-size: 24px;
+    text-align: center;
+    font-weight: bold;
+    padding: 50px 0;
+}
+.gnb ul {
+    display: flex;
+    width: 100%;
+    padding: 20px;
+    background-color: rgb(152, 136, 209);
+}
+.gnb ul li {
+    width: calc(25% - 10px);
+    text-align: center;
+}
+.gnb ul li a {
+    color: #fff;
+    font-weight: bold;
+}

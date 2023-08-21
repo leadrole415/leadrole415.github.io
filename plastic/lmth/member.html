@@ -1,0 +1,264 @@
+<%	
+strFlashMenuLeftTop  = "1" '좌측 플래시 메뉴 메인 번호 
+strFlashMenuLeftSub  = "1" '좌측 플래시 메뉴 서브 번호
+%>
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="Author" content="KBIZ한국플라스틱제조업협동조합"/>
+<meta name="Keywords" content="KBIZ한국플라스틱제조업협동조합"/>
+<meta name="Description" content="KBIZ한국플라스틱제조업협동조합"/>
+<meta name="viewport" content="user-scalable=yes,initial-scale=1.0,maximum-scale=10.0,minimum-scale=1.0,width=device-width">
+<title>조합원 현황 - KBIZ한국플라스틱제조업협동조합</title>
+<link rel="stylesheet" href="../assets/css/ui.css">
+<link rel="stylesheet" href="../assets/css/layout.css">
+<link rel="stylesheet" href="../assets/css/board.css">
+<link rel="stylesheet" href="../assets/css/page.css">
+<script src="../assets/plugin/jquery/jquery-1.12.1.min.js"></script>
+<script src="../assets/plugin/jquery/jquery-ui.min.js"></script>
+<script src="../assets/plugin/bxslider/jquery.bxslider.min.js"></script>
+<script src="../assets/plugin/bxslider/jquery.bxslider-rahisified.min.js"></script>
+<script src="../assets/js/common.js"></script>
+<script src="../assets/js/page.js"></script>
+</head>
+<body id="section3">
+<!-- gnb start -->  
+   <!-- #include virtual="/assets/cni/gnb.html" --> 
+<!-- gnb End -->
+
+
+
+<div class="sub_title">
+    <h2>조합원 정보</h2>
+</div>
+
+    
+
+
+
+
+<!-- body_contents -->
+<div class="body_contents">  
+    <div class="resWidth">
+     
+    <!-- side start -->  
+      <!-- #include virtual="/assets/cni/side3.html" --> 
+    <!-- side End -->      
+    
+
+    <!-- content_area -->
+    <div class="content_area">
+        <div class="body_title">
+            <h3>조합원 현황</h3>
+            <div class="location"> 
+                <div class="path">
+                  <ul>
+                    <li class="home"><span><a class="navi_home" href="/">홈</a></span></li>
+                    <li>조합원 정보</li>
+                    <li>조합원 현황</li>
+                  </ul>
+                  <!-- #include virtual="/assets/cni/btn.html" --> 
+                </div>
+            </div> 
+        </div>
+                  
+        <!-- contents-->         
+        <div class="contents">
+            <!--catagoryTabs-->
+            <ul class="catagoryTabs">
+              <li class="active"><a href="#tab1" class="tab01"><span>서울·경기·인천</a></span></li>        
+              <li><a href="#tab2" class="tab02"><span>대전·충청</a></span></li>        
+              <li><a href="#tab3" class="tab03"><span>광주·전라</span></a></li>        
+              <li><a href="#tab4" class="tab04"><span>부산·영남</span></a></li>        
+              <li><a href="#tab5" class="tab05"><span>강원</span></a></li>   
+              <li><a href="#tab6" class="tab06"><span>제주</a></span></li>   
+            </ul>
+            <!--catagoryTabs-->
+
+            <script>
+            $(document).ready(function() {
+
+            //When page loads...
+            $(".tab_content").hide(); //Hide all content
+            $("ul.catagoryTabs li:first").addClass("active").show(); //Activate first tab
+            $(".tab_content:first").show(); //Show first tab content
+
+            //On Click Event
+            $("ul.catagoryTabs li").click(function() {
+
+              $("ul.catagoryTabs li").removeClass("active"); //Remove any "active" class
+              $(this).addClass("active"); //Add "active" class to selected tab
+              $(".tab_content").hide(); //Hide all tab content
+
+              var activeTab = $(this).find("a").attr("href"); //Find the href attribute value to identify the active tab + content
+              $(activeTab).fadeIn(); //Fade in the active ID content
+              return false;
+            });
+
+            });
+            </script>
+            <div class="board"> 
+              <!--boardtop Start-->
+              <div class="boardtop">
+                <p class="page_num">총 <span> 17</span>건 <span>1/</span>2페이지</p>
+                
+                <!--검색 Start-->
+                <div class="board_search">
+                  <form name="searchfrm" class="search" method="post" action="01_data01.asp" onsubmit="return search_bbs(document.searchfrm)">
+                    <fieldset>
+                      <legend>게시물 검색</legend>
+                      <label for="strSearch_div2" class="skip">검색선택</label>
+                      <select id="strSearch_div2" name="search">
+                      <option value=1>제목</option><option value=2>내용</option>   
+                      </select>
+                      <label for="strSearch_text" class="skip">검색어</label>
+                      <input type="text" name="str" class="inputText" id="strSearch_text" style="ime-mode:active;"  value="" placeholder="검색어를 입력하세요.">
+                      <button type="submit" class="txt_button">검색</button>
+                    </fieldset>
+                     <input type="hidden" name="center" value="1"/>
+                  </form>
+                </div>
+                 <script type="text/javascript">
+                        <!--
+                         document.searchfrm.search.options.value='';							
+                        //-->
+                </script>
+                <!--검색 End--> 
+              </div>
+              <!--boardtop End-->   
+            <div class="tab_container">
+              <div id="tab1" class="tab_content">
+                <div class="mem_con member02 photoG_wrap">
+                  <ul>
+
+                    <li>
+                        <a href="/lmth/memberview.html">
+                          <div class="thumb actionImg1">
+                            <img src="../assets/img/page/photoG_img02.jpg" alt="">                     
+                          </div>
+                          <div class="postInfo">                        	
+                            <strong>(주)만택</strong>  
+                            <em class="tel">031-321-0372</em>
+                            <em class="add">경기도 용인시 처인구 원삼면 원양로 327-20</em>
+                          </div>
+                        </a> 
+                        <span class="go_home"><a href="http://manntek.kr"></a></span>   
+                    </li>
+                    <li>
+                      <a href="/lmth/memberview.html">
+                        <div class="thumb actionImg1">
+                          <img src="../assets/img/page/photoG_img02.jpg" alt="">                     
+                        </div>
+                        <div class="postInfo">                        	
+                          <strong>(주)명진산업</strong>  
+                          <em class="tel">031-434-9020</em>
+                          <em class="add">경기도 시흥시 공단2대로 147(정왕동)</em>
+                        </div>
+                      </a> 
+                      <span class="go_home"><a href="http://manntek.kr"></a></span>   
+                    </li>
+                    <li>
+                      <a href="/lmth/memberview.html">
+                        <div class="thumb actionImg1">
+                          <img src="../assets/img/page/photoG_img02.jpg" alt="">                     
+                        </div>
+                        <div class="postInfo">                        	
+                          <strong>(주)삼화기업</strong>  
+                          <em class="tel">02-2671-0477</em>
+                          <em class="add">서울 구로구 구로중앙로 207</em>
+                        </div>
+                      </a> 
+                      <span class="go_home"><a href="http://manntek.kr"></a></span>   
+                  </li>
+                  <li>
+                    <a href="/lmth/memberview.html">
+                      <div class="thumb actionImg1">
+                        <img src="../assets/img/page/photoG_img02.jpg" alt="">                     
+                      </div>
+                      <div class="postInfo">                        	
+                        <strong>(주)만택</strong>  
+                        <em class="tel">031-321-0372</em>
+                        <em class="add">경기도 용인시 처인구 원삼면 원양로 327-20</em>
+                      </div>
+                    </a> 
+                    <span class="go_home"><a href="http://manntek.kr"></a></span>   
+                </li>
+                <li>
+                  <a href="/lmth/memberview.html">
+                    <div class="thumb actionImg1">
+                      <img src="../assets/img/page/photoG_img02.jpg" alt="">                     
+                    </div>
+                    <div class="postInfo">                        	
+                      <strong>(주)명진산업</strong>  
+                      <em class="tel">031-434-9020</em>
+                      <em class="add">경기도 시흥시 공단2대로 147(정왕동)</em>
+                    </div>
+                  </a> 
+                  <span class="go_home"><a href="http://manntek.kr"></a></span>   
+              </li>
+              <li>
+                <a href="/lmth/memberview.html">
+                  <div class="thumb actionImg1">
+                    <img src="../assets/img/page/photoG_img02.jpg" alt="">                     
+                  </div>
+                  <div class="postInfo">                        	
+                    <strong>(주)삼화기업</strong>  
+                    <em class="tel">02-2671-0477</em>
+                    <em class="add">서울 구로구 구로중앙로 207</em>
+                  </div>
+                </a> 
+                <span class="go_home"><a href="http://manntek.kr"></a></span>   
+            </li>
+                
+                  </ul>  
+                </div>
+              </div>
+
+            </div> 
+            
+                    <!-- 게시판 페이징 S -->
+                  <!-- pagination -->
+                  <div class="pagination pcOn">
+                    <a href="#" class="arrow start">start</a>
+                    <a href="#" class="arrow prev">prev</a>
+                    <a href="#" class="active">1</a>
+                    <a href="#">2</a>
+                    <a href="#">3</a>
+                    <a href="#">4</a>
+                    <a href="#">5</a>
+                    <a href="#" class="arrow next">next</a>
+                    <a href="#" class="arrow end">end</a>
+                </div>
+                <div class="pagination mobileOn">
+                    <a href="#" class="arrow start">start</a>
+                    <a href="#" class="arrow prev">prev</a>
+                    <span class="pageNum">
+                        <strong>1</strong>
+                        / 256</span>
+                    <a href="#" class="arrow next">next</a>
+                    <a href="#" class="arrow end">end</a>
+                </div>     
+                <!-- 게시판 페이징 E -->
+          </div>
+          <!-- board end -->    
+        </div>
+        <!-- contents-->
+    
+    </div>
+    <!-- content_area -->
+
+
+</div>
+</div>
+<!-- body_contents -->
+</div>
+<!-- wrap End -->
+
+
+
+<!-- #include virtual="/assets/cni/footer.html" --> 
+</body>
+</html>

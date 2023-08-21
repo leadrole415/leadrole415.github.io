@@ -1,0 +1,94 @@
+@charset "utf-8";
+/*초기화*/
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+    margin:0;
+    padding:0;
+    border:0;
+    outline:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+
+
+article,aside,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section,main { 
+    display:block;
+}
+
+ul {
+    list-style:none;
+}
+
+a {
+    margin:0;
+    padding:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+	text-decoration:none;
+	color:#151515;
+
+}
+
+table {
+    border-collapse:collapse;
+    border-spacing:0;
+}
+
+input, select {
+    vertical-align:middle;
+}
+
+
+img {
+	max-width:100%;
+	height:auto; border:0;
+}
+
+
+/*공통*/
+@font-face{font-family: "Nanum Gothic";
+			src:local("Nanum Gothic"),
+			url(../font/NanumGothic.eot),
+			url(../font/NanumGothic.woff) format("woff"),
+			url(../font/NanumGothic.ttf) format("truetype");}
+@font-face{font-family: "GeosansLight";
+			src:local("GeosansLight"),
+			url(../font/GeosansLight.eot),
+			url(../font/GeosansLight.woff) format("woff"),
+			url(../font/GeosansLight.ttf) format("truetype");}
+
+@font-face {
+  font-family: 'icomoon';
+  src:  url('../font/icomoon.eot?ecoxz0');
+  src:  url('../font/icomoon.eot?ecoxz0#iefix') format('embedded-opentype'),
+    url('../font/icomoon.ttf?ecoxz0') format('truetype'),
+    url('../font/icomoon.woff?ecoxz0') format('woff'),
+    url('../font/icomoon.svg?ecoxz0#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+body{font-family:"Nanum Gothic", sans-serif; font-size:24px; line-height:1.5; color:#151515;}
+
+
+
+.clearfix::before,.clearfix::after{content:""; display:block;}
+.clearfix::after{clear:both;}
+
+
+

@@ -1,0 +1,117 @@
+<%	
+strFlashMenuLeftTop  = "4" '좌측 플래시 메뉴 메인 번호 
+strFlashMenuLeftSub  = "1" '좌측 플래시 메뉴 서브 번호
+%>
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="Author" content="KBIZ한국플라스틱제조업협동조합"/>
+<meta name="Keywords" content="KBIZ한국플라스틱제조업협동조합"/>
+<meta name="Description" content="KBIZ한국플라스틱제조업협동조합"/>
+<meta name="viewport" content="user-scalable=yes,initial-scale=1.0,maximum-scale=10.0,minimum-scale=1.0,width=device-width">
+<title>오시는 길 - KBIZ한국플라스틱제조업협동조합</title>
+<link rel="stylesheet" href="../assets/css/ui.css">
+<link rel="stylesheet" href="../assets/css/layout.css">
+<link rel="stylesheet" href="../assets/css/board.css">
+<link rel="stylesheet" href="../assets/css/page.css">
+<script src="../assets/plugin/jquery/jquery-1.12.1.min.js"></script>
+<script src="../assets/plugin/jquery/jquery-ui.min.js"></script>
+<script src="../assets/plugin/bxslider/jquery.bxslider.min.js"></script>
+<script src="../assets/plugin/bxslider/jquery.bxslider-rahisified.min.js"></script>
+<script src="../assets/js/common.js"></script>
+<script src="../assets/js/page.js"></script>
+</head>
+<body id="section5">
+<!-- gnb start -->  
+   <!-- #include virtual="/assets/cni/gnb.html" --> 
+<!-- gnb End -->
+
+
+
+<div class="sub_title">
+    <h2>조합 소개</h2>
+</div>
+
+    
+
+
+
+
+<!-- body_contents -->
+<div class="body_contents">  
+    <div class="resWidth">
+        
+<!-- side start -->  
+	<!-- #include virtual="/assets/cni/side5.html" --> 
+<!-- side End -->  
+
+    <!-- content_area -->
+    <div class="content_area">
+        <div class="body_title">
+            <h3>오시는 길</h3>
+            <div class="location"> 
+                <div class="path">
+                  <ul>
+                    <li class="home"><span><a class="navi_home" href="/">홈</a></span></li>
+                    <li>조합 소개</li>
+                    <li>오시는 길</li>
+                  </ul>
+                  <!-- #include virtual="/assets/cni/btn.html" --> 
+                </div>
+            </div>   
+        </div>
+        
+
+        <!-- contents-->
+        <div class="contents">
+           <div class="mapArea">
+               <!-- * 카카오맵 - 지도퍼가기 -->
+                <!-- 1. 지도 노드 -->
+                <div id="daumRoughmapContainer1605171478308" class="root_daum_roughmap root_daum_roughmap_landing"></div>
+
+                <!--
+                    2. 설치 스크립트
+                    * 지도 퍼가기 서비스를 2개 이상 넣을 경우, 설치 스크립트는 하나만 삽입합니다.
+                -->
+                <script charset="UTF-8" class="daum_roughmap_loader_script" src="https://ssl.daumcdn.net/dmaps/map_js_init/roughmapLoader.js"></script>
+
+                <!-- 3. 실행 스크립트 -->
+                <script charset="UTF-8">
+                    new daum.roughmap.Lander({
+                        "timestamp" : "1605171478308",
+                        "key" : "22wfd",
+                        "mapWidth" : "640",
+                        "mapHeight" : "360"
+                    }).render();
+                </script>
+           </div>
+           <div class="mapBox">
+                <ul>
+                    <li class="add"><span class="add_txt">07217 서울시 영등포구 당산로
+                        41길 11 당산SK V1센터 E동 911호</span></li>
+                    <li class="tel"><span class="tel_txt">02-2068-3230</span></li>
+                    <li class="fax"><span class="tel_txt">02-2068-3236</span></li>
+                    <li><a href="https://map.kakao.com/?from=roughmap&eName=%EC%84%9C%EC%9A%B8%20%EC%98%81%EB%93%B1%ED%8F%AC%EA%B5%AC%20%EB%8B%B9%EC%82%B0%EB%A1%9C41%EA%B8%B8%2011&eX=477531.0&eY=1119822.0">길찾기</a></li>
+                </ul>
+           </div>
+        </div>
+        <!-- contents-->
+
+    </div>
+    <!-- content_area -->
+
+
+</div>
+</div>
+<!-- body_contents -->
+</div>
+<!-- wrap End -->
+
+
+
+<!-- #include virtual="/assets/cni/footer.html" --> 
+</body>
+</html>

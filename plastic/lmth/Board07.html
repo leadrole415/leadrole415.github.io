@@ -1,0 +1,159 @@
+<%	
+strFlashMenuLeftTop  = "7" '좌측 플래시 메뉴 메인 번호 
+strFlashMenuLeftSub  = "1" '좌측 플래시 메뉴 서브 번호
+%>
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="Author" content="KBIZ한국플라스틱제조업협동조합"/>
+<meta name="Keywords" content="KBIZ한국플라스틱제조업협동조합"/>
+<meta name="Description" content="KBIZ한국플라스틱제조업협동조합"/>
+<meta name="viewport" content="user-scalable=yes,initial-scale=1.0,maximum-scale=10.0,minimum-scale=1.0,width=device-width">
+<title>자유게시판 - KBIZ한국플라스틱제조업협동조합</title>
+<link rel="stylesheet" href="../assets/css/ui.css">
+<link rel="stylesheet" href="../assets/css/layout.css">
+<link rel="stylesheet" href="../assets/css/board.css">
+<link rel="stylesheet" href="../assets/css/sub.css">
+<script src="../assets/plugin/jquery/jquery-1.12.1.min.js"></script>
+<script src="../assets/plugin/jquery/jquery-ui.min.js"></script>
+<script src="../assets/plugin/bxslider/jquery.bxslider.min.js"></script>
+<script src="../assets/plugin/bxslider/jquery.bxslider-rahisified.min.js"></script>
+<script src="../assets/js/common.js"></script>
+<script src="../assets/js/main.js"></script>
+</head>
+<body id="section1">
+
+<!-- gnb start -->  
+   <!-- #include virtual="/assets/cni/gnb.html" --> 
+<!-- gnb End -->
+
+
+<div class="sub_title">
+    <h2>알림마당</h2>
+</div>
+
+    
+
+
+
+
+<!-- body_contents -->
+<div class="body_contents">  
+    <div class="resWidth">
+    <!-- side start -->  
+      <!-- #include virtual="/assets/cni/side1.html" --> 
+     <!-- side End -->     
+   	  
+    <!-- content_area -->
+    <div class="content_area" id="contentsBox">
+        <div class="body_title">
+            <h3>자유게시판</h3>
+            <div class="location"> 
+              <div class="path">
+                <ul>
+                  <li class="home"><span><a class="navi_home" href="/">홈</a></span></li>
+                  <li>알림마당</li>
+                  <li>자유게시판</li>                
+                </ul>
+          <!-- #include virtual="/assets/cni/btn.html" --> 
+              </div>
+          </div> 
+        </div>
+                 
+     <!-- contents -->  
+     <div class="contens">
+     <!-- board start -->
+     <div class="board"> 
+        
+		  
+        <form name="INPUT" method="post" action="" enctype="multipart/FORM-data"> 
+       <input type="hidden" name="gubun" value="">
+       <input type="hidden" name="search" value="">
+       <input type="hidden" name="str" value="">
+       <input type="hidden" name="b_group" value="">
+       <input type="hidden" name="b_step" value="">
+       <input type="hidden" name="b_level" value="">
+       <input type="hidden" name="pre_b_email" value=""> 
+       <input type="hidden" name="cate" value="free"> 
+       <input type="hidden" name="b_signyn" value="y">  
+       <input type="hidden" name="b_mailingyn" value="n">  
+       <input type="hidden" name="B_TYPE" value="t">  
+                 <!--board_view S-->
+                 <table class="board_write">
+                   <caption>
+                   글쓰기 양식
+                   </caption>
+                   <tbody>
+                     <tr>
+                       <th scope="row"><label for="name">제목</label></th>
+                       <td><input name="b_writer" type="text" id="name" class="w30"></td>
+                     </tr>
+                     <tr>
+                       <th scope="row"><label for="subject">이름</label></th>
+                       <td><input name="b_title" type="text" id="subject" class="w90"></td>
+                     </tr>
+                 
+                     <tr>
+                       <th scope="row"><label for="content">내용</label></th>
+                       <td><textarea name="b_content" id="content" class="w90" rows="10" placeholder="내용을 입력하세요."></textarea></td>
+                     </tr>
+                     <tr>
+                        <th scope="row"><label for="">첨부</label></th>
+                        <td><a href="#" class="btn_file">파일선택</a> 선택된 파일 없음</td>
+                      </tr>
+                      <tr>
+                        <th scope="row"><label for="">공개여부</label></th>
+                        <td><input type="radio" id="" name="" value="">
+                            <label for="">전체공개</label>
+                            <input type="radio" id="" name="" value="">
+                            <label for="">비공개</label>
+                        </td>
+                      </tr>                 
+                     <tr>
+                       <th scope="row"><label for="password">비밀번호</label></th>
+                       <td><input type="password" id="password" name="password" class="w40p"><span class="pt05"> ※ 4~8 자리 (숫자)</span></td>
+                     </tr>
+                     <!-- <tr>
+                       <th scope="row"><label for="character">보안문자</label></th>
+                       <td>
+                
+               <img src="captcha.asp" id="imgCaptcha" alt="보안문자">&nbsp;<a href="javascript:void(0);" onclick="RefreshImage('imgCaptcha');">새로고침</a>
+               <label for="txtCaptcha" class="skip">보안문자</label> <input type="text" name="txtCaptcha" id="txtCaptcha" value="" class="w30"><br>   
+               
+                       
+                       
+                       </td>
+                     </tr> -->
+                   </tbody>
+                 </table>
+                 
+                 <!-- btn_wrap S-->
+                 <div class="btn_wrap btn_write">
+                   <div> 
+                       <a href="#" class="btnSmall gray">글쓰기</a> 
+                       <a href="#" class="btnSmall white">취소</a>
+                    </div>
+                 </div>
+                 <!-- btn_wrap S--> 
+             </form>    
+               </div>
+      <!-- board end -->  
+      </div>
+      <!--contents-->  
+    </div>
+    <!-- content_area -->
+
+
+</div>
+</div>
+<!-- body_contents -->
+</div>
+<!-- wrap End -->
+
+<!-- #include virtual="/assets/cni/footer.html" --> 
+
+
+</body>
+</html>

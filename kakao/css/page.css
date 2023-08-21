@@ -1,0 +1,128 @@
+@charset "utf-8";
+/* --------------------------------------------------------
+Reset
+----------------------------------------------------------*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {margin:0; padding:0; border:0; font-size:100%; vertical-align:baseline;}
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {display:block;}
+body {line-height:1;}
+ol, ul {list-style:none;}
+blockquote, q {quotes:none;}
+blockquote:before, blockquote:after,
+q:before, q:after {content:''; content:none;}
+table {border-collapse:separate; border-spacing:0;}
+
+legend{overflow:hidden;position:absolute;width:0;height:0;font-size:0;line-height:0;text-indent:-9999px;}
+caption{overflow:hidden;position:absolute;width:0;height:0;font-size:0;line-height:0;text-indent:-9999px;}
+label{cursor:pointer;}
+
+
+.wrap {width: 750px; margin: 0 auto; background: url(../img/bg.jpg) no-repeat center top; height: 1561px; background: cover; font-family: 'Gothic A1', sans-serif;}
+.wrap .top_bar {height: 70px; width: 100%; line-height: 70px; border-bottom: 1px solid #ae7941; background: rgba(0, 0, 0, 0.2); position: relative;}
+.wrap .top_bar .pay {text-align: left; color: #fff; font-size: 20px; font-weight: 600; padding-left: 20px;}
+.wrap .top_bar .pay::before {display: inline-block; content: ""; width: 22px; height: 22px; background: url(../img/pay_icon.png) no-repeat; vertical-align: middle; margin-right: 3px;}
+.wrap .top_bar .pay strong {font-size: 22px;}
+.wrap .top_bar .center {color: #ae7941; font-size: 24px; position: absolute; left: 50%; transform: translateX(-50%);}
+.wrap .top_bar .right {position: absolute; right: 0;}
+
+.wrap .contents {text-align: center; position: relative;}
+.wrap .contents .neon {margin-top: -36px;  position: relative; height: 451px;}
+.wrap .contents .neon .neon01 {display: block; left: 50%;  position: absolute; transform: translateX(-50%);}
+.wrap .contents .neon .neon02 {display: none; position: absolute; left: 50%; transform: translateX(-50%);}
+/* .wrap .contents .neon .neon03 {display: none; position: absolute; left: 50%; transform: translateX(-50%);}
+.wrap .contents .neon .neon04 {display: none; position: absolute; left: 50%; transform: translateX(-50%);}
+.wrap .contents .neon .neon05 {display: none; position: absolute; left: 50%; transform: translateX(-50%); animation: neon05 1 1s;} */
+@keyframes neon02 {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+}
+.wrap .contents .money {animation: money infinite 1s;} 
+@keyframes money {
+    50% {transform: translateY(10px);} 
+}
+.wrap .contents .million {position: absolute; left: 20%; top: 678px; animation: million infinite .5s;}
+@keyframes million {
+    0% {transform: scale(1);}
+    20% {transform: scale(1.2);}
+    100% {transform: scale(1);}
+}
+.wrap .contents .million02 {position: absolute; left: 18%; top: 678px; animation: million02 infinite .5s;}
+@keyframes million02 {
+    0% { transform-origin: 0px; transform: rotate(0);}
+    20%{transform-origin: 0px; transform: rotate(-10deg);}
+    100% {transform-origin: 0px; transform:rotate(0);}
+}
+.wrap .contents .million03 {position: absolute; left: 20%; top: 678px; animation: million03 infinite .5s;}
+@keyframes million03 {
+    0% { transform-origin: 100%; transform: rotate(0);}
+    20%{transform-origin: 100%; transform: rotate(10deg);}
+    100% {transform-origin: 100%; transform:rotate(0);}
+}
+
+.wrap .contents .coin {position: absolute; top: 200px; left: 0; animation: coin 1 1s;}
+@keyframes coin {
+    0% {transform: translateY(0px); opacity: 0; top: 0;}
+    100% {transform: translateY();}
+}
+.wrap .contents .reward {border: 1px solid #9e6933; width: 555px; height: 217px; border-radius: 10px; margin: 50px auto 90px auto; background: rgba(0, 0, 0, 0.4); position: relative;}
+.wrap .contents .reward dt {font-size: 24px; width: 225px; height: 45px; line-height: 45px; text-align: center; border: 1px solid #9e6933; border-radius: 25px;  position: absolute; top: -26px; left: 50%; transform: translateX(-50%); background: #160d0b; color: #9e6933;}
+.wrap .contents .reward dt strong {margin-right: 10px;}
+.wrap .contents .reward dd {color: #9e6933;}
+.wrap .contents .reward .title {padding: 50px 0 20px 0; font-size: 26px; border-bottom: 1px solid #9e6933; width: calc(100% - 60px); margin: 0 auto;}
+.wrap .contents .reward .con {margin-top: 25px;}
+.wrap .contents .reward .con ul li {display: inline-block; width: calc(25% - 25px); font-size: 30px; font-weight: bold; color: #a6c696; letter-spacing: -1px;}
+.wrap .contents .reward .con ul li .white {color: #fff;}
+.wrap .contents .reward .con ul li .num {display: block; font-size: 24px; font-weight: normal; color: #9e6933; margin-top: 10px;}
+.wrap .contents .share {background: url(../img/share_bg.png) no-repeat; width: 100%; height: 158px; position: relative;}
+
+.wrap .contents .share.active { animation: share 3 .5s;}
+@keyframes share {
+    0% { opacity: 0;}
+    100% {opacity: 1;}
+}
+
+.wrap .contents .share dt {position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: -26px;}
+.wrap .contents .share dd {padding-top: 20px;}
+.wrap .contents .share ul li {display: inline-block; width: calc(25% - 60px);}
+.wrap .contents .bottom {background: url(../img/bottom.png) no-repeat; width: 100%; height: 164px; position: relative; bottom: 0px;}
+.wrap .contents .btn_go {position: absolute; left: 50%; transform: translateX(-50%); bottom: 270px;}
+.wrap .contents .btn_go.fixed {bottom: 0;}
+
+@media (max-width:767px) {
+    .wrap {width: 100%;}
+} 
+
+
+.wrap02 {background: none; height: 1434px; background: #121212;}
+.wrap02 .top {position: relative; animation: top 1 .8s;}
+@keyframes top {
+    0% {opacity: 1;}
+    80% {opacity: 1; transform: translateY(-130px);}
+    90% {opacity: 1; transform: translateY(-150px);}
+    100% {opacity: 1; transform: translateY(0);}
+}
+.wrap02 .btn_close {position: absolute; top: 30px; right: 30px;}
+.wrap02 .bottom {position: relative; animation: bottom 1 .8s;}
+@keyframes bottom {
+    0% {opacity: 1;}
+    80% {opacity: 1; transform: translateY(130px);}
+    90% {opacity: 1; transform: translateY(150px);}
+    100% {opacity: 1; transform: translateY(0);}
+}
+.wrap02 .btn02 {position: absolute; bottom: 20px; left: 50%; transform: translateX(-50%);}
