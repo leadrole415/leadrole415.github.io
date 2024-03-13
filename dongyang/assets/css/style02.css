@@ -347,6 +347,9 @@ header .right span {
 header .right .bell {
   position: relative;
   background: url(../images/bell.png) no-repeat;
+  width: 2.4rem;
+  height: 2.4rem;
+  display: inline-block;
 }
 header .right .bell::after {
   display: block;
@@ -362,6 +365,9 @@ header .right .bell::after {
 header .right .search {
   background: url(../images/search.png) no-repeat;
   margin-left: 1.1rem;
+  width: 2.4rem;
+  height: 2.4rem;
+  display: inline-block;
 }
 /* 홈 */
 .main .user {
