@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>홈</title>
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="assets/css/reset02.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+  <body>
+    <div class="dim"></div>
+    <div class="dim-alert">
+      <button
+        class="modal-close-btn"
+        style="background: url(./assets/img/icon_18_close.png)"
+      ></button>
+      <div class="alertBox">
+        <p class="alert-text">
+          <img src="./assets/img/ico-warning-alert.png" />보험금 청구 건 접수가
+          완료되었어요.
+        </p>
+        <p class="alert-text sec">
+          <img src="./assets/img/ico-warning-alert.png" />계약을 위해 추가
+          서류가 필요해요.
+        </p>
+      </div>
+    </div>
+    <div id="wrap" class="main has-footer">
+      <header>
+        <div class="left">
+          <div class="text">간편 홈</div>
+          <div class="switch-btn">
+            <input type="checkbox" id="switch" hidden />
+            <label for="switch" class="switch-label"
+              ><span class="onoff-btn"></span>
+            </label>
+          </div>
+        </div>
+        <div class="right">
+          <span class="bell"></span>
+          <span class="search"></span>
+        </div>
+      </header>
+      <main>
+        <!-- <div class="user">
+          <div class="user-link">
+            <a href="javascript:void(0)">김동양님 환영합니다!</a>
+          </div>
+          <span class="round-badge">BLACK</span>
+        </div>
+
+        <div class="img-wrap">
+          <img src="assets/images/main-img-01.png" alt="" class="ani-img" />
+          <a href="#link" type="button" class="popup-link">
+            <img src="assets/images/main-img-02.png" alt="" />
+          </a>
+        </div> -->
+        <!-- 로그인 정보/알림 -->
+        <section style="margin-bottom: 0">
+          <div
+            class="d-flex -sb"
+            style="position: relative; padding: 18px 0 29px 0"
+          >
+            <div style="width: 230px">
+              <img src="./assets/img/span1.png" style="margin: b" />
+              <img src="./assets/img/span2.png" />
+            </div>
+            <div class="iconBox" style="position: absolute; right: 0; top: 0">
+              <img id="character" src="./assets/img/ico-character.png" />
+            </div>
+          </div>
+          <div class="infoBox">
+            <a href="#" id="modal-btn" class="dim-btn d-flex -sb -aic">
+              <p class="d-flex -aic">
+                <img
+                  src="./assets/img/ico-speech_bubble.png"
+                  style="margin-right: 4px"
+                />보험금 청구 건 접수가 완료되었어요.
+              </p>
+              <img
+                src="./assets/img/ico-right-arrow-white.png"
+                style="width: 7px; height: 14px"
+              />
+            </a>
+          </div>
+        </section>
+        <!--// 로그인 정보/알림 -->
+
+        <div class="slider">
+          <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <a href="sub-01.html" class="my-cont">
+                  <div class="title-wrap">
+                    <p class="blue-text bt-icon01">나의보험</p>
+                    <h4>(무)NEW간편한내가만드는보장보험</h4>
+                  </div>
+                  <div class="price-info">
+                    <dl>
+                      <dt>월 보험료</dt>
+                      <dd>145,000원</dd>
+                    </dl>
+                    <dl>
+                      <dt>총 납입보험료</dt>
+                      <dd>10,365,000원</dd>
+                    </dl>
+                  </div>
+                  <div class="btn-wrap-2">
+                    <button class="btn btn-line">보험료납입</button>
+                    <button class="btn btn-bg">사고보험금청구</button>
+                  </div>
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a href="javascript:void(0)" class="my-cont">
+                  <div class="title-wrap">
+                    <p class="blue-text bt-icon02">나의대출</p>
+                  </div>
+                  <div class="progress">
+                    <div class="popover"></div>
+                    <div class="progress-wrap">
+                      <div class="progress-bar"></div>
+                    </div>
+                  </div>
+                  <div class="price-info">
+                    <dl>
+                      <dt>받은 대출금액</dt>
+                      <dd>3,000,000원</dd>
+                    </dl>
+                    <dl>
+                      <dt>대출 가능금액</dt>
+                      <dd>2,000,000원</dd>
+                    </dl>
+                  </div>
+                  <div class="btn-wrap-2">
+                    <button class="btn btn-line">대출조회</button>
+                    <button class="btn btn-bg">대출신청</button>
+                  </div>
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a href="javascript:void(0)" class="my-cont">
+                  <div class="title-wrap">
+                    <p class="blue-text bt-icon03">나의퇴직연금</p>
+                    <h4>개인형IRP</h4>
+                  </div>
+                  <div class="price-info">
+                    <dl>
+                      <dt>평가금액</dt>
+                      <dd>10,365,000원</dd>
+                    </dl>
+                    <dl>
+                      <dt>수익률</dt>
+                      <dd class="rate up">5.7%</dd>
+                    </dl>
+                  </div>
+                  <div class="btn-wrap-2">
+                    <button class="btn btn-line">운용자산변경</button>
+                    <button class="btn btn-bg">디폴트옵션</button>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div class="swiper-pagination"></div>
+            <!-- <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div> -->
+          </div>
+        </div>
+
+        <div class="service">
+          <div class="title-flex">
+            <h3>자주 찾는 서비스</h3>
+            <button class="setting">맞춤설정</button>
+          </div>
+          <div class="box-shadow">
+            <ul class="service-lists">
+              <li>
+                <a href="javascript:void(0)">보험금청구</a>
+              </li>
+              <li>
+                <a href="javascript:void(0)">보험계약변경</a>
+              </li>
+              <li>
+                <a href="javascript:void(0)">보험계약대출</a>
+              </li>
+              <li>
+                <a href="javascript:void(0)">증명서발급</a>
+              </li>
+              <li>
+                <a href="javascript:void(0)">자동이체관리</a>
+              </li>
+              <li>
+                <a href="javascript:void(0)">내정보관리</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="benefit">
+          <h3>알면 도움이 되는 혜택</h3>
+          <div class="scroll-wrap">
+            <ul class="benefit-lists">
+              <li>
+                <a href="javascript:void(0)">
+                  <p>
+                    새롭게 개편된<br />
+                    <span class="green-text">우수고객제도</span>를<br />
+                    만나보세요!
+                  </p>
+                </a>
+              </li>
+              <li>
+                <a href="javascript:void(0)">
+                  <p>
+                    내게 필요한<br />
+                    <span class="blue-text">은퇴자금</span>은<br />
+                    얼마?
+                  </p>
+                </a>
+              </li>
+              <li>
+                <a href="javascript:void(0)">
+                  <p>
+                    건강이상신호!<br />
+                    <span class="mint-text">나의 건강상태</span><br />
+                    자가진단
+                  </p>
+                </a>
+              </li>
+              <li>
+                <a href="javascript:void(0)">
+                  <p>
+                    병원<br />
+                    <span class="purple-text">진료/처방내역</span>을<br />
+                    한눈에!
+                  </p>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="outer">
+          <div class="slider">
+            <div class="swiper bannerSwiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <a href="javascript:void(0)">
+                    <p class="text">응모고객 전원에게 별다방 쿠폰!</p>
+                    <p class="link-text">보험조회 하러가기</p>
+                  </a>
+                </div>
+                <div class="swiper-slide">
+                  <a href="javascript:void(0)">
+                    <p class="text">응모고객 전원에게 별다방 쿠폰!</p>
+                    <p class="link-text">보험조회 하러가기</p>
+                  </a>
+                </div>
+                <div class="swiper-slide">
+                  <a href="javascript:void(0)">
+                    <p class="text">응모고객 전원에게 별다방 쿠폰!</p>
+                    <p class="link-text">보험조회 하러가기</p>
+                  </a>
+                </div>
+              </div>
+              <div class="swiper-pagination"></div>
+              <div class="btn-wrap">
+                <div class="btn stop-btn"></div>
+                <div class="btn play-btn"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="notice box-shadow">
+          <div class="title-flex">
+            <h3>공지사항</h3>
+            <a href="javascript:void(0)" class="link">더보기</a>
+          </div>
+          <ul class="notice-lists">
+            <li>
+              <a href="javascript:void(0)">
+                <dl>
+                  <dt>신분증 진위확인 서비스 일시 중단 서비스 일시 중단</dt>
+                  <dd>2023.03.27</dd>
+                </dl>
+                <dl>
+                  <dt>금리확정형 보험계약대출 가산금리 서비스 일시 중단</dt>
+                  <dd>2023.03.27</dd>
+                </dl>
+                <dl>
+                  <dt>시스템 교체작업으로 인한 일시중 서비스 일시 중단</dt>
+                  <dd>2023.03.27</dd>
+                </dl>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </main>
+      <footer>
+        <ul class="footer-lists">
+          <li class="active">
+            <a href="main.html" class="home">
+              <span class="text">홈</span>
+            </a>
+          </li>
+          <li>
+            <a href="#link" class="my">
+              <span class="text">MY</span>
+            </a>
+          </li>
+          <li>
+            <a href="finance.html" class="product">
+              <span class="text">상품</span>
+            </a>
+          </li>
+          <li>
+            <a href="#link" class="bf">
+              <span class="text">혜택</span>
+            </a>
+          </li>
+          <li>
+            <a href="#link" class="all">
+              <span class="text">전체</span>
+            </a>
+          </li>
+        </ul>
+      </footer>
+    </div>
+    <!-- <div class="dimmed"></div>
+    <div class="popup">
+      <ul class="lists">
+        <li>보험금 청구 건 접수가 완료되었어요.</li>
+        <li>계약을 위해 추가 서류가 필요해요.</li>
+      </ul>
+      <button class="close-btn"></button>
+    </div> -->
+    <script src="assets/js/swiper-bundle.min.js"></script>
+    <script>
+      //메인 slider
+      var swiper = new Swiper(".mySwiper", {
+        // autoplay: {
+        //   // 자동 슬라이드 설정 , 비 활성화 시 false
+        //   delay: 3000, // 시간 설정
+        //   disableOnInteraction: false, // false로 설정하면 스와이프 후 자동 재생이 비활성화 되지 않음
+        // },
+        spaceBetween: 18,
+        pagination: {
+          el: ".swiper-pagination",
+        },
+        // navigation: {
+        //   nextEl: ".swiper-button-next",
+        //   prevEl: ".swiper-button-prev",
+        // },
+        on: {
+          slideChange: function () {
+            //progress bar
+            const popover = document.querySelector(".popover");
+            const progressBar = document.querySelector(".progress-bar");
+            const slides = document.querySelectorAll(".swiper-slide");
+            if (swiper.realIndex == 1) {
+              popover.style.left = `51%`;
+              progressBar.style.width = `70%`;
+            } else {
+              popover.style.left = 0;
+              progressBar.style.width = 0;
+            }
+          },
+        },
+      });
+
+      // 배너 slider
+      var bannerswiper = new Swiper(".bannerSwiper", {
+        autoplay: {
+          // 자동 슬라이드 설정 , 비 활성화 시 false
+          delay: 4000, // 시간 설정
+          disableOnInteraction: false, // false로 설정하면 스와이프 후 자동 재생이 비활성화 되지 않음
+        },
+        pagination: {
+          el: ".swiper-pagination",
+          type: "fraction",
+        },
+      });
+      // stop play 버튼
+      const stopBtn = document.querySelector(".stop-btn");
+      const playBtn = document.querySelector(".play-btn");
+      playBtn.style.display = "none";
+      stopBtn.addEventListener("click", function () {
+        bannerswiper.autoplay.stop();
+        stopBtn.style.display = "none";
+        playBtn.style.display = "block";
+      });
+      playBtn.addEventListener("click", function () {
+        bannerswiper.autoplay.start();
+        stopBtn.style.display = "block";
+        playBtn.style.display = "none";
+      });
+
+      //간편 홈
+      const switchBtn = document.querySelector(".switch-btn input");
+      const bellIcon = document.querySelector(".bell");
+      const searchIcon = document.querySelector(".search");
+      switchBtn.addEventListener("click", function (e) {
+        if (e.target.checked == true) {
+          window.location.href = "main-easy.html";
+          console.log("open");
+        } else {
+          window.location.href = "main.html";
+        }
+      });
+
+      //popup
+      // const popupLink = document.querySelector(".popup-link");
+      // const dimmed = document.querySelector(".dimmed");
+      // const popup = document.querySelector(".popup");
+      // const closeBtn = document.querySelector(".popup .close-btn");
+      // popupLink.addEventListener("click", function () {
+      //   dimmed.classList.add("open");
+      //   popup.classList.add("open");
+      //   const popLists = document.querySelectorAll(".lists li");
+      //   popLists.forEach((e) => {
+      //     e.style.display = "none";
+      //     let i = 0;
+      //     const interval = setInterval(function () {
+      //       popLists[i].style.display = "flex";
+      //       i++;
+      //       if (i == popLists.length) {
+      //         clearInterval(interval);
+      //       }
+      //     }, 700);
+      //   });
+
+      //   // setTimeout(function () {
+      //   //   console.log(".5s");
+      //   // }, 500);
+      // });
+      // closeBtn.addEventListener("click", function () {
+      //   dimmed.classList.remove("open");
+      //   popup.classList.remove("open");
+      // });
+
+      const modalBtn = document.querySelector("#modal-btn");
+      const dimBox = document.querySelector(".alert-text.sec");
+      const dim = document.querySelector(".dim");
+      const closeBtn = document.querySelector(".modal-close-btn");
+      modalBtn.addEventListener("click", function () {
+        dim.classList.toggle("active");
+      });
+      closeBtn.addEventListener("click", function () {
+        dimBox.classList.replace("sec", "up");
+        setTimeout(function () {
+          dim.classList.remove("active");
+          dimBox.classList.replace("up", "sec");
+        }, 600);
+      });
+    </script>
+  </body>
+</html>

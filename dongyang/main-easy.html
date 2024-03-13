@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>간편 홈</title>
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="assets/css/reset02.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+  <body class="main has-footer">
+    <div id="wrap" class="easy">
+      <header>
+        <div class="left">
+          <div class="text">간편 홈</div>
+          <div class="switch-btn">
+            <input type="checkbox" id="switch" checked hidden />
+            <label for="switch" class="switch-label"
+              ><span class="onoff-btn"></span>
+            </label>
+          </div>
+        </div>
+        <div class="right">
+          <span class="bell">알림</span>
+          <span class="search">검색</span>
+        </div>
+      </header>
+      <main>
+        <div class="user">
+          <div class="user-link">
+            <a href="javascript:void(0)">김동양님 환영합니다!</a>
+          </div>
+          <a href="javascript:void(0)" class="go-btn">나의 동양생명 바로가기</a>
+        </div>
+
+        <div class="slider">
+          <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <a href="sub-01.html" class="my-cont">
+                  <div class="title-wrap">
+                    <p class="blue-text bt-icon01">나의보험</p>
+                    <h4>(무)NEW간편한내가만드는보장보험</h4>
+                  </div>
+                  <div class="price-info">
+                    <dl>
+                      <dt>월 보험료</dt>
+                      <dd>145,000원</dd>
+                    </dl>
+                    <dl>
+                      <dt>총 납입보험료</dt>
+                      <dd>10,365,000원</dd>
+                    </dl>
+                  </div>
+                  <div class="btn-wrap-2">
+                    <button class="btn btn-line">보험료납입</button>
+                    <button class="btn btn-bg">사고보험금청구</button>
+                  </div>
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a href="javascript:void(0)" class="my-cont">
+                  <div class="title-wrap">
+                    <p class="blue-text bt-icon02">나의대출</p>
+                  </div>
+                  <div class="progress">
+                    <div class="popover"></div>
+                    <div class="progress-wrap">
+                      <div class="progress-bar"></div>
+                    </div>
+                  </div>
+                  <div class="price-info">
+                    <dl>
+                      <dt>받은 대출금액</dt>
+                      <dd>3,000,000원</dd>
+                    </dl>
+                    <dl>
+                      <dt>대출 가능금액</dt>
+                      <dd>2,000,000원</dd>
+                    </dl>
+                  </div>
+                  <div class="btn-wrap-2">
+                    <button class="btn btn-line">대출조회</button>
+                    <button class="btn btn-bg">대출신청</button>
+                  </div>
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a href="javascript:void(0)" class="my-cont">
+                  <div class="title-wrap">
+                    <p class="blue-text bt-icon03">나의퇴직연금</p>
+                    <h4>개인형IRP</h4>
+                  </div>
+                  <div class="price-info">
+                    <dl>
+                      <dt>평가금액</dt>
+                      <dd>10,365,000원</dd>
+                    </dl>
+                    <dl>
+                      <dt>수익률</dt>
+                      <dd class="rate up">5.7%</dd>
+                    </dl>
+                  </div>
+                  <div class="btn-wrap-2">
+                    <button class="btn btn-line">운용자산변경</button>
+                    <button class="btn btn-bg">디폴트옵션</button>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div class="swiper-pagination"></div>
+            <!-- <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div> -->
+          </div>
+        </div>
+
+        <div class="service">
+          <ul class="service-lists">
+            <li>
+              <a href="javascript:void(0)">보험금청구</a>
+            </li>
+            <li>
+              <a href="javascript:void(0)">보험계약변경</a>
+            </li>
+            <li>
+              <a href="javascript:void(0)">보험계약대출</a>
+            </li>
+            <li>
+              <a href="javascript:void(0)">증명서발급</a>
+            </li>
+            <li>
+              <a href="javascript:void(0)">자동이체관리</a>
+            </li>
+            <li>
+              <a href="javascript:void(0)">내정보관리</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="easy-notice">
+          <a href="javascript:void(0)">신분증 진위확인 서비스 일시중단 안내</a>
+        </div>
+      </main>
+      <footer>
+        <ul class="footer-lists">
+          <li class="active">
+            <a href="main.html" class="home">
+              <span class="text">홈</span>
+            </a>
+          </li>
+          <li>
+            <a href="#link" class="my">
+              <span class="text">MY</span>
+            </a>
+          </li>
+          <li>
+            <a href="finance.html" class="product">
+              <span class="text">상품</span>
+            </a>
+          </li>
+          <li>
+            <a href="#link" class="bf">
+              <span class="text">혜택</span>
+            </a>
+          </li>
+          <li>
+            <a href="#link" class="all">
+              <span class="text">전체</span>
+            </a>
+          </li>
+        </ul>
+      </footer>
+    </div>
+    <script src="assets/js/swiper-bundle.min.js"></script>
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        // autoplay: {
+        //   // 자동 슬라이드 설정 , 비 활성화 시 false
+        //   delay: 3000, // 시간 설정
+        //   disableOnInteraction: false, // false로 설정하면 스와이프 후 자동 재생이 비활성화 되지 않음
+        // },
+        spaceBetween: 18,
+        pagination: {
+          el: ".swiper-pagination",
+        },
+        // navigation: {
+        //   nextEl: ".swiper-button-next",
+        //   prevEl: ".swiper-button-prev",
+        // },
+        on: {
+          slideChange: function () {
+            //progress bar
+            const popover = document.querySelector(".popover");
+            const progressBar = document.querySelector(".progress-bar");
+            const slides = document.querySelectorAll(".swiper-slide");
+            if (swiper.realIndex == 1) {
+              popover.style.left = `51%`;
+              progressBar.style.width = `70%`;
+            } else {
+              popover.style.left = 0;
+              progressBar.style.width = 0;
+            }
+          },
+        },
+      });
+
+      //간편 홈
+      const switchBtn = document.querySelector(".switch-btn input");
+      const bellIcon = document.querySelector(".bell");
+      const searchIcon = document.querySelector(".search");
+      switchBtn.addEventListener("click", function (e) {
+        if (e.target.checked == true) {
+          window.location.href = "main-easy.html";
+          console.log("open");
+        } else {
+          window.location.href = "main.html";
+        }
+      });
+    </script>
+  </body>
+</html>
