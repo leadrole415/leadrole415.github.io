@@ -732,7 +732,7 @@ header .right .search {
   border-radius: 50%;
 }
 .scroll-wrap {
-  /* margin-left: -1.8rem; */
+  margin-left: -1.8rem;
   margin-right: -1.8rem;
   /* overflow: hidden; */
 }
@@ -745,7 +745,7 @@ header .right .search {
   overflow-x: scroll;
   white-space: nowrap;
   margin-top: 2rem;
-  padding: 0 1.8rem 0 0;
+  padding: 0 1.8rem;
   /* margin-right: -1.8rem; */
 }
 .main .benefit-lists::-webkit-scrollbar {
