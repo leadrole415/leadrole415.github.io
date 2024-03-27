@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="assets/css/style.css" />
   </head>
   <body>
-    <div class="dim"></div>
+    <!-- <div class="dim"></div>
     <div class="dim-alert">
       <button
         class="modal-close-btn"
@@ -25,7 +25,7 @@
           서류가 필요해요.
         </p>
       </div>
-    </div>
+    </div> -->
     <div id="wrap" class="main has-footer">
       <header>
         <div class="left">
@@ -43,7 +43,7 @@
         </div>
       </header>
       <main>
-        <!-- <div class="user">
+        <div class="user">
           <div class="user-link">
             <a href="javascript:void(0)">김동양님 환영합니다!</a>
           </div>
@@ -55,9 +55,9 @@
           <a href="#link" type="button" class="popup-link">
             <img src="assets/images/main-img-02.png" alt="" />
           </a>
-        </div> -->
+        </div>
         <!-- 로그인 정보/알림 -->
-        <section style="margin-bottom: 0">
+        <!-- <section style="margin-bottom: 0">
           <div
             class="d-flex -sb"
             style="position: relative; padding: 18px 0 29px 0"
@@ -84,7 +84,7 @@
               />
             </a>
           </div>
-        </section>
+        </section> -->
         <!--// 로그인 정보/알림 -->
 
         <div class="slider">
@@ -328,14 +328,14 @@
         </ul>
       </footer>
     </div>
-    <!-- <div class="dimmed"></div>
+    <div class="dimmed"></div>
     <div class="popup">
       <ul class="lists">
         <li>보험금 청구 건 접수가 완료되었어요.</li>
         <li>계약을 위해 추가 서류가 필요해요.</li>
       </ul>
       <button class="close-btn"></button>
-    </div> -->
+    </div>
     <script src="assets/js/swiper-bundle.min.js"></script>
     <script>
       //메인 slider
@@ -411,49 +411,49 @@
       });
 
       //popup
-      // const popupLink = document.querySelector(".popup-link");
-      // const dimmed = document.querySelector(".dimmed");
-      // const popup = document.querySelector(".popup");
-      // const closeBtn = document.querySelector(".popup .close-btn");
-      // popupLink.addEventListener("click", function () {
-      //   dimmed.classList.add("open");
-      //   popup.classList.add("open");
-      //   const popLists = document.querySelectorAll(".lists li");
-      //   popLists.forEach((e) => {
-      //     e.style.display = "none";
-      //     let i = 0;
-      //     const interval = setInterval(function () {
-      //       popLists[i].style.display = "flex";
-      //       i++;
-      //       if (i == popLists.length) {
-      //         clearInterval(interval);
-      //       }
-      //     }, 700);
-      //   });
+      const popupLink = document.querySelector(".popup-link");
+      const dimmed = document.querySelector(".dimmed");
+      const popup = document.querySelector(".popup");
+      const closeBtn = document.querySelector(".popup .close-btn");
+      popupLink.addEventListener("click", function () {
+        dimmed.classList.add("open");
+        popup.classList.add("open");
+        const popLists = document.querySelectorAll(".lists li");
+        popLists.forEach((e) => {
+          e.style.display = "none";
+          let i = 0;
+          const interval = setInterval(function () {
+            popLists[i].style.display = "flex";
+            i++;
+            if (i == popLists.length) {
+              clearInterval(interval);
+            }
+          }, 700);
+        });
 
-      //   // setTimeout(function () {
-      //   //   console.log(".5s");
-      //   // }, 500);
-      // });
-      // closeBtn.addEventListener("click", function () {
-      //   dimmed.classList.remove("open");
-      //   popup.classList.remove("open");
-      // });
-
-      const modalBtn = document.querySelector("#modal-btn");
-      const dimBox = document.querySelector(".alert-text.sec");
-      const dim = document.querySelector(".dim");
-      const closeBtn = document.querySelector(".modal-close-btn");
-      modalBtn.addEventListener("click", function () {
-        dim.classList.toggle("active");
+        // setTimeout(function () {
+        //   console.log(".5s");
+        // }, 500);
       });
       closeBtn.addEventListener("click", function () {
-        dimBox.classList.replace("sec", "up");
-        setTimeout(function () {
-          dim.classList.remove("active");
-          dimBox.classList.replace("up", "sec");
-        }, 600);
+        dimmed.classList.remove("open");
+        popup.classList.remove("open");
       });
+
+      // const modalBtn = document.querySelector("#modal-btn");
+      // const dimBox = document.querySelector(".alert-text.sec");
+      // const dim = document.querySelector(".dim");
+      // const closeBtn = document.querySelector(".modal-close-btn");
+      // modalBtn.addEventListener("click", function () {
+      //   dim.classList.toggle("active");
+      // });
+      // closeBtn.addEventListener("click", function () {
+      //   dimBox.classList.replace("sec", "up");
+      //   setTimeout(function () {
+      //     dim.classList.remove("active");
+      //     dimBox.classList.replace("up", "sec");
+      //   }, 600);
+      // });
     </script>
   </body>
 </html>
