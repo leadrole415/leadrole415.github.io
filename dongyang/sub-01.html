@@ -284,10 +284,12 @@
     <script src="assets/js/swiper-bundle.min.js"></script>
     <script>
       //progress bar
-      const popover = document.querySelector(".popover");
-      const progressBar = document.querySelector(".progress-bar");
-      popover.style.left = `51%`;
-      progressBar.style.width = `70%`;
+      window.addEventListener("DOMContentLoaded", function () {
+        const popover = document.querySelector(".popover");
+        const progressBar = document.querySelector(".progress-bar");
+        popover.style.left = `51%`;
+        progressBar.style.width = `70%`;
+      });
 
       //accordion
       const accordions = document.querySelectorAll(".accordion");
