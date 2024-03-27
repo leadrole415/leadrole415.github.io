@@ -426,14 +426,14 @@ header .right .search {
     opacity: 1;
   }
 }
-/* @keyframes scaleImg {
+@keyframes scaleImg {
   0% {
     scale: 0;
   }
   100% {
     scale: 1;
   }
-} */
+}
 .iconBox {
   z-index: 1;
 }
