@@ -1,166 +1,402 @@
 <!DOCTYPE html>
-<html>
-  <title>김주연 PORTFOLIO</title>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
-  <link
-    rel="stylesheet"
-    href="https://fonts.googleapis.com/css?family=Montserrat"
-  />
-  <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-  />
-  <style>
-    body,
-    h1 {
-      font-family: "Montserrat", sans-serif;
-    }
-    img {
-      margin-bottom: -7px;
-    }
-    .w3-row-padding img {
-      margin-bottom: 12px;
-    }
-    .title {
-      margin-bottom: 100px;
-    }
-    .w3-third {
-      padding: 10px;
-    }
-    .w3-third img {
-      border: 1px solid rgb(173, 177, 180);
-      margin-bottom: 20px;
-    }
-  </style>
+<html lang="en" data-dark="false">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="assets/css/reset.css" />
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <script src="assets/js/swiper-bundle.min.js"></script>
+    <script src="assets/js/jquery-3.7.1.min.js"></script>
+    <script src="assets/js/common.js"></script>
+  </head>
   <body>
-    <!-- Sidebar -->
-    <nav
-      class="w3-sidebar w3-black w3-animate-top w3-xxlarge"
-      style="display: none; padding-top: 150px"
-      id="mySidebar"
-    >
-      <a
-        href="javascript:void(0)"
-        onclick="w3_close()"
-        class="w3-button w3-black w3-xxlarge w3-padding w3-display-topright"
-        style="padding: 6px 24px"
-      >
-        <i class="fa fa-remove"></i>
-      </a>
-      <div class="w3-bar-block w3-center">
-        <a href="#" class="w3-bar-item w3-button w3-text-grey w3-hover-black"
-          >About</a
-        >
-        <!-- <a href="#" class="w3-bar-item w3-button w3-text-grey w3-hover-black">Photos</a>
-    <a href="#" class="w3-bar-item w3-button w3-text-grey w3-hover-black">Shop</a>
-    <a href="#" class="w3-bar-item w3-button w3-text-grey w3-hover-black">Contact</a> -->
-      </div>
-    </nav>
-
-    <!-- !PAGE CONTENT! -->
-    <div class="w3-content" style="max-width: 1500px">
-      <!-- Header -->
-      <div class="w3-opacity">
-        <span class="w3-button w3-xxlarge w3-white w3-right" onclick="w3_open()"
-          ><i class="fa fa-bars"></i
-        ></span>
-        <div class="w3-clear"></div>
-        <header class="w3-center w3-margin-bottom">
-          <h1 class="title">
-            <a href="https://leadrole415.github.io/">
-              <b>LEADROLE PORTFOLIO</b>
-            </a>
-          </h1>
-          <!-- <p class="w3-padding-16"><button class="w3-button w3-black" onclick="myFunction()">Toggle Grid Padding</button></p> -->
-        </header>
-      </div>
-
-      <!-- Photo Grid -->
-      <div class="w3-row" id="myGrid" style="margin-bottom: 128px">
-        <div class="w3-third">
-          <a href="https://leadrole415.github.io/dongyang/main.html">
-            <img src="images/dongyang.jpg" style="width: 100%" />
-          </a>
-        </div>
-
-        <div class="w3-third">
-          <a href="https://leadrole415.github.io/rianag/index.html">
-            <img src="images/rianag02.jpg" style="width: 100%" />
-          </a>
-        </div>
-
-        <div class="w3-third">
-          <a href="http://www.kplic.or.kr/">
-            <img src="images/plastic.png" style="width: 100%" />
-          </a>
-        </div>
-
-        <div class="w3-third">
-          <a href="https://leadrole415.github.io/b/index.html">
-            <img src="images/florist.png" style="width: 100%" />
-          </a>
-        </div>
-
-        <div class="w3-third">
-          <a href="https://leadrole415.github.io/a/index.html">
-            <img src="images/jade.png" style="width: 100%" />
-          </a>
-        </div>
-
-        <div class="w3-third">
-          <a href="https://leadrole415.github.io/test/index.html">
-            <img src="images/test.png" style="width: 100%" />
-          </a>
+    <!-- wrap -->
+    <div id="wrap" class="wrap main">
+      <!-- slide-wrap -->
+      <div class="top_slider slide_wrap">
+        <div class="slide_content">
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Perferendis
+          autem adipisci omnis. Accusamus beatae veniam optio, rerum voluptate
+          excepturi? Repellat, quas ea sit quos sequi ullam ex tempore
+          laboriosam nemo.
         </div>
       </div>
+      <!-- // slide-wrap -->
 
-      <!-- End Page Content -->
+      <!-- header -->
+      <div id="header" class="header inner fade-wrap">
+        <h1 class="logo"><a href="index.html">Leadrole</a></h1>
+      </div>
+      <!-- // header -->
+
+      <!-- gnb -->
+      <div class="gnb inner">
+        <ul class="dep01">
+          <li class="main_list">
+            <a href="">Menu01</a>
+            <div class="dep02">
+              <div class="dep02_box">
+                <p class="title">SubMenu01</p>
+                <ul>
+                  <li class="sub_list"><a href="">SubMenu01-01</a></li>
+                  <li class="sub_list"><a href="">SubMenu01-02</a></li>
+                  <li class="sub_list"><a href="">SubMenu01-03</a></li>
+                </ul>
+              </div>
+              <div class="dep02_box">
+                <p class="title">SubMenu02</p>
+                <ul>
+                  <li class="sub_list"><a href="">SubMenu02-01</a></li>
+                  <li class="sub_list"><a href="">SubMenu02-02</a></li>
+                  <li class="sub_list"><a href="">SubMenu02-03</a></li>
+                </ul>
+              </div>
+              <div class="dep02_box">
+                <p class="title">SubMenu03</p>
+                <ul>
+                  <li class="sub_list"><a href="">SubMenu03-01</a></li>
+                  <li class="sub_list"><a href="">SubMenu03-02</a></li>
+                  <li class="sub_list"><a href="">SubMenu03-03</a></li>
+                </ul>
+              </div>
+            </div>
+          </li>
+          <li class="main_list">
+            <a href="">Menu02</a>
+            <div class="dep02">
+              <div class="dep02_box">
+                <p class="title">SubMenu01</p>
+                <ul>
+                  <li class="sub_list"><a href="">SubMenu01-01</a></li>
+                  <li class="sub_list"><a href="">SubMenu01-02</a></li>
+                  <li class="sub_list"><a href="">SubMenu01-03</a></li>
+                </ul>
+              </div>
+              <div class="dep02_box">
+                <p class="title">SubMenu02</p>
+                <ul>
+                  <li class="sub_list"><a href="">SubMenu02-01</a></li>
+                  <li class="sub_list"><a href="">SubMenu02-02</a></li>
+                  <li class="sub_list"><a href="">SubMenu02-03</a></li>
+                </ul>
+              </div>
+              <div class="dep02_box">
+                <p class="title">SubMenu03</p>
+                <ul>
+                  <li class="sub_list"><a href="">SubMenu03-01</a></li>
+                  <li class="sub_list"><a href="">SubMenu03-02</a></li>
+                  <li class="sub_list"><a href="">SubMenu03-03</a></li>
+                </ul>
+              </div>
+              <div class="dep02_box">
+                <p class="title">SubMenu01</p>
+                <ul>
+                  <li class="sub_list"><a href="">SubMenu01-01</a></li>
+                  <li class="sub_list"><a href="">SubMenu01-02</a></li>
+                  <li class="sub_list"><a href="">SubMenu01-03</a></li>
+                </ul>
+              </div>
+              <div class="dep02_box">
+                <p class="title">SubMenu02</p>
+                <ul>
+                  <li class="sub_list"><a href="">SubMenu02-01</a></li>
+                  <li class="sub_list"><a href="">SubMenu02-02</a></li>
+                  <li class="sub_list"><a href="">SubMenu02-03</a></li>
+                </ul>
+              </div>
+              <div class="dep02_box">
+                <p class="title">SubMenu03</p>
+                <ul>
+                  <li class="sub_list"><a href="">SubMenu03-01</a></li>
+                  <li class="sub_list"><a href="">SubMenu03-02</a></li>
+                  <li class="sub_list"><a href="">SubMenu03-03</a></li>
+                </ul>
+              </div>
+              <div class="dep02_box">
+                <p class="title">SubMenu01</p>
+                <ul>
+                  <li class="sub_list"><a href="">SubMenu01-01</a></li>
+                  <li class="sub_list"><a href="">SubMenu01-02</a></li>
+                  <li class="sub_list"><a href="">SubMenu01-03</a></li>
+                </ul>
+              </div>
+              <div class="dep02_box">
+                <p class="title">SubMenu02</p>
+                <ul>
+                  <li class="sub_list"><a href="">SubMenu02-01</a></li>
+                  <li class="sub_list"><a href="">SubMenu02-02</a></li>
+                  <li class="sub_list"><a href="">SubMenu02-03</a></li>
+                </ul>
+              </div>
+              <div class="dep02_box">
+                <p class="title">SubMenu03</p>
+                <ul>
+                  <li class="sub_list"><a href="">SubMenu03-01</a></li>
+                  <li class="sub_list"><a href="">SubMenu03-02</a></li>
+                  <li class="sub_list"><a href="">SubMenu03-03</a></li>
+                </ul>
+              </div>
+              <div class="dep02_box">
+                <p class="title">SubMenu01</p>
+                <ul>
+                  <li class="sub_list"><a href="">SubMenu01-01</a></li>
+                  <li class="sub_list"><a href="">SubMenu01-02</a></li>
+                  <li class="sub_list"><a href="">SubMenu01-03</a></li>
+                </ul>
+              </div>
+              <div class="dep02_box">
+                <p class="title">SubMenu02</p>
+                <ul>
+                  <li class="sub_list"><a href="">SubMenu02-01</a></li>
+                  <li class="sub_list"><a href="">SubMenu02-02</a></li>
+                  <li class="sub_list"><a href="">SubMenu02-03</a></li>
+                </ul>
+              </div>
+              <div class="dep02_box">
+                <p class="title">SubMenu03</p>
+                <ul>
+                  <li class="sub_list"><a href="">SubMenu03-01</a></li>
+                  <li class="sub_list"><a href="">SubMenu03-02</a></li>
+                  <li class="sub_list"><a href="">SubMenu03-03</a></li>
+                </ul>
+              </div>
+            </div>
+          </li>
+          <li class="main_list">
+            <a href="">Menu03</a>
+            <div class="dep02">
+              <div class="dep02_box">
+                <p class="title">SubMenu01</p>
+                <ul>
+                  <li class="sub_list"><a href="">SubMenu01-01</a></li>
+                  <li class="sub_list"><a href="">SubMenu01-02</a></li>
+                  <li class="sub_list"><a href="">SubMenu01-03</a></li>
+                </ul>
+              </div>
+              <div class="dep02_box">
+                <p class="title">SubMenu01</p>
+                <ul>
+                  <li class="sub_list"><a href="">SubMenu01-01</a></li>
+                  <li class="sub_list"><a href="">SubMenu01-02</a></li>
+                  <li class="sub_list"><a href="">SubMenu01-03</a></li>
+                </ul>
+              </div>
+              <div class="dep02_box">
+                <p class="title">SubMenu02</p>
+                <ul>
+                  <li class="sub_list"><a href="">SubMenu02-01</a></li>
+                  <li class="sub_list"><a href="">SubMenu02-02</a></li>
+                  <li class="sub_list"><a href="">SubMenu02-03</a></li>
+                </ul>
+              </div>
+              <div class="dep02_box">
+                <p class="title">SubMenu03</p>
+                <ul>
+                  <li class="sub_list"><a href="">SubMenu03-01</a></li>
+                  <li class="sub_list"><a href="">SubMenu03-02</a></li>
+                  <li class="sub_list"><a href="">SubMenu03-03</a></li>
+                </ul>
+              </div>
+            </div>
+          </li>
+          <li class="main_list">
+            <a href="">Menu04</a>
+            <div class="dep02">
+              <div class="dep02_box">
+                <p class="title">SubMenu01</p>
+                <ul>
+                  <li class="sub_list"><a href="">SubMenu01-01</a></li>
+                  <li class="sub_list"><a href="">SubMenu01-02</a></li>
+                  <li class="sub_list"><a href="">SubMenu01-03</a></li>
+                </ul>
+              </div>
+              <div class="dep02_box">
+                <p class="title">SubMenu02</p>
+                <ul>
+                  <li class="sub_list"><a href="">SubMenu02-01</a></li>
+                  <li class="sub_list"><a href="">SubMenu02-02</a></li>
+                  <li class="sub_list"><a href="">SubMenu02-03</a></li>
+                </ul>
+              </div>
+              <div class="dep02_box">
+                <p class="title">SubMenu03</p>
+                <ul>
+                  <li class="sub_list"><a href="">SubMenu03-01</a></li>
+                  <li class="sub_list"><a href="">SubMenu03-02</a></li>
+                  <li class="sub_list"><a href="">SubMenu03-03</a></li>
+                </ul>
+              </div>
+            </div>
+          </li>
+          <li class="main_list">
+            <a href="">Menu05</a>
+            <div class="dep02">
+              <div class="dep02_box">
+                <p class="title">SubMenu01</p>
+                <ul>
+                  <li class="sub_list"><a href="">SubMenu01-01</a></li>
+                  <li class="sub_list"><a href="">SubMenu01-02</a></li>
+                  <li class="sub_list"><a href="">SubMenu01-03</a></li>
+                </ul>
+              </div>
+              <div class="dep02_box">
+                <p class="title">SubMenu02</p>
+                <ul>
+                  <li class="sub_list"><a href="">SubMenu02-01</a></li>
+                  <li class="sub_list"><a href="">SubMenu02-02</a></li>
+                  <li class="sub_list"><a href="">SubMenu02-03</a></li>
+                </ul>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+      <!-- // gnb -->
+
+      <!-- container -->
+      <div id="container">
+        <section class="info_wrap section01">
+          <div class="main_slider">
+            <div class="swiper mySwiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">Slide 1</div>
+                <div class="swiper-slide">Slide 2</div>
+                <div class="swiper-slide">Slide 3</div>
+                <div class="swiper-slide">Slide 4</div>
+                <div class="swiper-slide">Slide 5</div>
+                <div class="swiper-slide">Slide 6</div>
+                <div class="swiper-slide">Slide 7</div>
+                <div class="swiper-slide">Slide 8</div>
+                <div class="swiper-slide">Slide 9</div>
+              </div>
+              <div class="swiper-button-next"></div>
+              <div class="swiper-button-prev"></div>
+              <div class="swiper-scrollbar"></div>
+            </div>
+          </div>
+          <div class="info">
+            <div thumbsSlider="" class="swiper mySwiper2 thumb">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <div class="typing">
+                    Language!
+                    <h1 class="text"></h1>
+                  </div>
+                </div>
+                <div class="swiper-slide">Info 2</div>
+                <div class="swiper-slide">Info 3</div>
+                <div class="swiper-slide">Info 4</div>
+                <div class="swiper-slide">Info 5</div>
+                <div class="swiper-slide">Info 6</div>
+                <div class="swiper-slide">Info 7</div>
+                <div class="swiper-slide">Info 8</div>
+                <div class="swiper-slide">Info 9</div>
+              </div>
+              <div class="swiper-pagination"></div>
+            </div>
+          </div>
+        </section>
+
+        <section class="inner section02">
+          <div class="fade-wrap">
+            <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Distinctio excepturi eos omnis ducimus aliquam consectetur dolorum
+              iusto nostrum, autem unde commodi qui dolorem tempore harum ab
+              reiciendis quidem, sapiente itaque?
+            </p>
+          </div>
+          <div class="cursor_area fade-wrap" style="margin-top: 30px">
+            <a href=""></a>
+          </div>
+          <div class="cursor cursor_hover"></div>
+        </section>
+
+        <section class="inner section03">
+          <div class="fade-wrap">
+            <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Distinctio excepturi eos omnis ducimus aliquam consectetur dolorum
+              iusto nostrum, autem unde commodi qui dolorem tempore harum ab
+              reiciendis quidem, sapiente itaque?
+            </p>
+          </div>
+        </section>
+
+        <section>
+          <!-- <div class="typing01">
+            <p></p>
+          </div>
+          <div class='typing'>Language! <h1 class="text"></h1></div> -->
+        </section>
+      </div>
+
+      <!-- // container -->
+      <!-- footer -->
+      <div id="footer" class="footer">
+        <div class="footer_content inner">
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus a
+            nesciunt, sint ab sunt quas quos officia amet magnam aut dolorum
+            molestias ea earum. Consequatur molestias ut tenetur deserunt
+            aperiam.
+          </p>
+        </div>
+      </div>
+      <!-- // footer -->
+
+      <!-- btn_area -->
+      <div class="btn_area">
+        <div class="btn_wrap">
+          <button class="top_btn"></button>
+          <button class="setting_btn"></button>
+        </div>
+        <div class="btn_content">
+          <div class="mode">
+            <p class="title">화면 스타일</p>
+            <div class="mode_wrap">
+              <button class="light_mode">
+                <span class="box"></span><span class="text">라이트 모드</span>
+              </button>
+              <button class="dark_mode">
+                <span class="box"></span><span class="text">다크 모드</span>
+              </button>
+            </div>
+          </div>
+          <button class="close_btn"></button>
+        </div>
+      </div>
+      <!-- // btn_area -->
     </div>
+    <!-- // wrap -->
 
-    <!-- Footer -->
-    <footer
-      class="w3-container w3-padding-64 w3-light-grey w3-center w3-opacity w3-xlarge"
-      style="margin-top: 128px"
-    >
-      <i class="fa fa-facebook-official w3-hover-opacity"></i>
-      <i class="fa fa-instagram w3-hover-opacity"></i>
-      <!-- <i class="fa fa-snapchat w3-hover-opacity"></i>
-  <i class="fa fa-pinterest-p w3-hover-opacity"></i> -->
-      <i class="fa fa-twitter w3-hover-opacity"></i>
-      <!-- <i class="fa fa-linkedin w3-hover-opacity"></i> -->
-      <p class="w3-medium">
-        Powered by
-        <a
-          href="http://grace415.co.kr/"
-          target="_blank"
-          class="w3-hover-text-green"
-          >grace</a
-        >
-      </p>
-    </footer>
-
-    <script>
-      // Toggle grid padding
-      function myFunction() {
-        var x = document.getElementById("myGrid");
-        if (x.className === "w3-row") {
-          x.className = "w3-row-padding";
-        } else {
-          x.className = x.className.replace("w3-row-padding", "w3-row");
-        }
-      }
-
-      // Open and close sidebar
-      function w3_open() {
-        document.getElementById("mySidebar").style.width = "100%";
-        document.getElementById("mySidebar").style.display = "block";
-      }
-
-      function w3_close() {
-        document.getElementById("mySidebar").style.display = "none";
-      }
-    </script>
+    <div class="popup_wrap">
+      <div class="popup">
+        <div class="popup_header">
+          <h2>팝업</h2>
+        </div>
+        <div class="popup_content"></div>
+        <div class="popup_footer">
+          <div class="btn_wrap">
+            <button class="day_close popup_close_btn">오늘 하루 보지 않기</button>
+            <button class="more_btn">자세히 보기</button>
+          </div>
+          <button class="x_btn popup_close_btn"></button>
+        </div>
+      </div>
+    </div>
   </body>
+  <script>
+    // const wrapper = document.querySelector(".slide-wrap");
+    // wrapper.addEventListener("mouseover", () => {
+    //   wrapper.style.animationPlayState = "paused";
+    // });
+    // wrapper.addEventListener("mouseleave", () => {
+    //   wrapper.style.animationPlayState = "running";
+    // });
+  </script>
 </html>
