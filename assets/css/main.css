@@ -12,14 +12,13 @@ body {
   margin-left: auto;
   margin-right: auto;
 }
-.top_slider.slide_wrap {
-  width: 5430px;
+.top_slider.slide_wrap {  
   transform: translateX(0px);
   animation: 40s linear 1s infinite normal none running slide-01;
 }
 @keyframes slide-01 {
   100% {
-    transform: translateX(-5430px);
+    transform: translateX(-1200px);
   }
 }
 .top_slider.slide_wrap:hover {
