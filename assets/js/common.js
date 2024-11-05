@@ -293,12 +293,19 @@ window.onload = function () {
   }
   // });
 
+  const clickEvent = (function() {
+    if ('ontouchstart' in document.documentElement === true) {
+      return 'touchstart';
+    } else {
+      return 'click';
+    }
+  })();
   // 팝업 close
   const popupCloseBtn = document.querySelectorAll(".popup_close_btn");
   const popupWrap = document.querySelector(".popup_wrap");
   popupWrap.classList.add("popup_show");
   popupCloseBtn.forEach(function (item) {
-    item.addEventListener("click", function () {
+    item.addEventListener(clickEvent, function () {
       popupWrap.classList.toggle("popup_show");
     });
   });
@@ -313,7 +320,7 @@ window.onload = function () {
     popupWrap.classList.remove("popup_show");
   }
   const dayCloseBtn = document.querySelector(".day_close");
-  dayCloseBtn.addEventListener("click", function () {
+  dayCloseBtn.addEventListener(clickEvent, function () {
     var now = new Date();
     now.setDate(now.getDate() + 1); // 현재 날짜에서 하루를 더함
     // 다음 팝업이 열리는 시간을 로컬 스토리지에 저장
