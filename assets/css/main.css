@@ -5,8 +5,7 @@ body {
 }
 .wrap {
   overflow: hidden;
-  position: relative;
-  overflow: hidden;
+  position: relative;  
 }
 .inner {
   width: 80%;
