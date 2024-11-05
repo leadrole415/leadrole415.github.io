@@ -301,29 +301,29 @@ window.onload = function () {
     }
   })();
   // 팝업 close
-  const popupCloseBtn = document.querySelectorAll(".popup_close_btn");
-  const popupWrap = document.querySelector(".popup_wrap");
-  popupWrap.classList.add("popup_show");
-  popupCloseBtn.forEach(function (item) {
-    item.addEventListener(clickEvent, function () {
-      popupWrap.classList.toggle("popup_show");
-    });
-  });
+  // const popupCloseBtn = document.querySelectorAll(".popup_close_btn");
+  // const popupWrap = document.querySelector(".popup_wrap");
+  // popupWrap.classList.add("popup_show");
+  // popupCloseBtn.forEach(function (item) {
+  //   item.addEventListener(clickEvent, function () {
+  //     popupWrap.classList.toggle("popup_show");
+  //   });
+  // });
 
   // 오늘 하루 보지 않기
   // 로컬 스토리지에서 팝업창 닫힌 시간 정보를 가져옴
-  const popupCloseTime = localStorage.getItem("popupCloseTime");
+  // const popupCloseTime = localStorage.getItem("popupCloseTime");
   // 팝업창 닫힌 시간 정보가 없거나 현재 시간보다 이전이라면 팝업창을 열음
-  if (!popupCloseTime || new Date(popupCloseTime) < new Date()) {
-    popupWrap.classList.add("popup_show");
-  } else {
-    popupWrap.classList.remove("popup_show");
-  }
-  const dayCloseBtn = document.querySelector(".day_close");
-  dayCloseBtn.addEventListener(clickEvent, function () {
-    var now = new Date();
-    now.setDate(now.getDate() + 1); // 현재 날짜에서 하루를 더함
-    // 다음 팝업이 열리는 시간을 로컬 스토리지에 저장
-    localStorage.setItem("popupCloseTime", now);
-  });
+  // if (!popupCloseTime || new Date(popupCloseTime) < new Date()) {
+  //   popupWrap.classList.add("popup_show");
+  // } else {
+  //   popupWrap.classList.remove("popup_show");
+  // }
+  // const dayCloseBtn = document.querySelector(".day_close");
+  // dayCloseBtn.addEventListener(clickEvent, function () {
+  //   var now = new Date();
+  //   now.setDate(now.getDate() + 1); // 현재 날짜에서 하루를 더함
+  //   // 다음 팝업이 열리는 시간을 로컬 스토리지에 저장
+  //   localStorage.setItem("popupCloseTime", now);
+  // });
 };
