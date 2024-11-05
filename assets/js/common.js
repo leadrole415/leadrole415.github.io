@@ -131,8 +131,8 @@ window.onload = function () {
   const scrollWindow = function () {
     if (window.scrollY != 0) {
       setTimeout(function () {
-        // window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
-        window.scrollTo(0, window.scrollY - 50);
+        window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
+        // window.scrollTo(0, window.scrollY - 50);
         scrollWindow();
       }, 10);
     }
