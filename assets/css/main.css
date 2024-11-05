@@ -593,6 +593,10 @@ html[data-dark="true"] .btn_area .btn_content {
   .popup_wrap .popup {
     width: 350px;
   }
+  .popup_wrap .popup .popup_footer .x_btn {
+    top: 15px;
+    right: 20px;
+  }
 }
 @media (max-width: 430px) {
   .popup_wrap .popup {
