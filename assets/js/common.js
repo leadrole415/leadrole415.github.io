@@ -1,8 +1,26 @@
 window.onload = function () {
+  // slide content
+  const topSlider = document.querySelector(".top_slider .slide_content");
+  const slideWidth = topSlider.clientWidth;
+  console.log(topSlider.clientWidth);
+  topSlider.style.width = slideWidth;
+  let keyframes = [
+    // {transform: "translate(-1200px, 0)"}
+    { transform: `translate(${-slideWidth}px, 0)` },
+  ];
+  let options = {
+    // delay: 1000,
+    duration: slideWidth * 5,
+    easing: "ease-in",
+    iterations: Infinity,
+    // fill: "forwards"
+  };
+  topSlider.animate(keyframes, options);
+
   // gnb 메뉴
   function gnb() {
-    let m = document.querySelectorAll(".main_list");
-    let d = document.querySelectorAll(".dep02");
+    let m = document.querySelectorAll(".gnb .main_list");
+    let d = document.querySelectorAll(".gnb .dep02");
     m.forEach((e) => {
       e.addEventListener("mouseover", function () {
         d.forEach((el) => {
@@ -18,6 +36,40 @@ window.onload = function () {
     });
   }
   gnb();
+
+  // gnb_mo
+  function gnbMo() {
+    const menuBtn = document.querySelector(".menu_btn");
+    const gnbMo = document.querySelector(".gnb_mo");
+    menuBtn.addEventListener("click", function () {
+      gnbMo.classList.toggle("on");
+    });
+
+    const menuCloseBtn = document.querySelector(".menu_close");
+    menuCloseBtn.addEventListener("click", function () {
+      gnbMo.classList.remove("on");
+    });
+
+    let m = document.querySelectorAll(".gnb_mo .main_list > a");
+    let d = document.querySelectorAll(".gnb_mo .dep02_box > p");
+    m.forEach((e) => {
+      // console.log(e);
+      e.addEventListener('click', function () {
+        // console.log(this.nextElementSibling);
+        this.nextElementSibling.classList.toggle('on');
+      })
+    })
+    d.forEach((e) => {
+      // console.log(e);
+      e.addEventListener('click', function () {
+        console.log(this);
+        this.nextElementSibling.classList.toggle('on');
+      })
+    })
+  }
+
+  gnbMo();
+  // const dep01
 
   // 메인슬라이더
   var swiper = new Swiper(".mySwiper", {
@@ -244,7 +296,7 @@ window.onload = function () {
   // 팝업 close
   const popupCloseBtn = document.querySelectorAll(".popup_close_btn");
   const popupWrap = document.querySelector(".popup_wrap");
-  popupWrap.classList.add('popup_show');
+  popupWrap.classList.add("popup_show");
   popupCloseBtn.forEach(function (item) {
     item.addEventListener("click", function () {
       popupWrap.classList.toggle("popup_show");
