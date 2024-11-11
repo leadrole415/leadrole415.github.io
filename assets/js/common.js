@@ -282,7 +282,7 @@ window.onload = function () {
   // console.log(cursor);
   // cursor.each(function () {
   if (cursor.classList.contains("cursor_hover")) {
-    cursor_area.addEventListener("mousemove", function (e) {
+    cursor_area.addEventListener("pointermove", function (e) {
       // console.log(e);
       // console.log(this);
       // this.classList.add("show");
